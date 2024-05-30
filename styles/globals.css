@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .component-spacing {
+    @apply max-w-6xl m-auto px-4;
+  }
+  .gen-spacing {
+    @apply mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16;
+  }
+
+  .app-first-spacing {
+    @apply pt-24 lg:pt-40;
+  }
+
+  .component-py {
+    @apply py-20;
+  }
+
+  .transition-ease {
+    @apply transition duration-150 ease-in-out;
+  }
+
+  .spacing-component-max-width {
+    @apply max-w-6xl m-auto px-4;
+  }
+
+  .spacing-component-margin {
+    @apply mb-10 mt-10;
+  }
+  .spacing-component-padding {
+    @apply pb-10 pt-10;
+  }
+  .spacing-component-margin-bottom {
+    @apply mb-10;
+  }
+  .spacing-component-padding-bottom {
+    @apply pb-10;
+  }
+}
