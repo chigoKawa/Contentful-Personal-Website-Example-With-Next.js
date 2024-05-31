@@ -6,9 +6,7 @@ import type { Metadata, ResolvingMetadata } from "next";
 import { draftMode } from "next/headers";
 
 // import LandingPage from "@/components/contentful/landing-page/landing-page";
-import {
-  retrieveImageUrlFromMediaWrapper
-} from "@/lib/contentful/helpers/common";
+import { retrieveImageUrlFromMediaWrapper } from "@/lib/contentful/helpers/common";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 

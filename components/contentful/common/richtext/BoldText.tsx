@@ -6,7 +6,7 @@ type Props = {
 
 const BoldText = ({children}: Props) => {
   return (
-    <span className=" font-semi ">{children}</span>
+    <span className="font-bold">{children}</span>
   )
 }
 

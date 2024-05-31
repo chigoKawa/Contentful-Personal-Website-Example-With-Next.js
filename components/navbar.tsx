@@ -78,7 +78,7 @@ const NavMenuSubItem = ({ item }: { item: INavigationItem }) => {
   const subNavigationItems: any | undefined = item?.fields?.subNavigationItems;
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Dropdown  key={item.sys.id} type="listbox">
+    <Dropdown key={item.sys.id} type="listbox">
       <NavbarItem>
         <DropdownTrigger>
           <div
@@ -284,7 +284,10 @@ export const Navbar: FC<INavbar> = ({ navEntry }) => {
         {/* {searchInput} */}
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {navEntry?.fields?.content?.map((item, index) => (
-            <NavbarMenuItem key={`${item?.sys?.id}-${index}`}>
+            <NavbarMenuItem
+              className="!list-none"
+              key={`${item?.sys?.id}-${index}`}
+            >
               <Link
                 color={
                   index === 2

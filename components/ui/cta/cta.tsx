@@ -29,7 +29,7 @@ const metaSection = cva(
   }
 );
 
-const bodyField = cva(["hidden sm:mt-4 sm:block"], {
+const bodyField = cva(["text-sm md:text-base sm:mt-4 sm:block"], {
   variants: {
     backgroundColor: {
       Default: "text-background/90",
@@ -75,10 +75,11 @@ const Cta: FC<ICtaComponent> = ({
   entryId,
   backgroundColor,
 }) => {
-
   type ImageCount = 0 | 1 | 2 | 3 | 4;
 
-  const imageCount: ImageCount = Array.isArray(images) ? (images.length as ImageCount) : 0;
+  const imageCount: ImageCount = Array.isArray(images)
+    ? (images.length as ImageCount)
+    : 0;
   return (
     <section>
       <div className="py-8 sm:px-6x lg:px-8x  spacing-component-max-width">
@@ -130,7 +131,7 @@ const Cta: FC<ICtaComponent> = ({
           <div
             data-contentful-entry-id={entryId}
             data-contentful-field-id={"images"}
-            className={cx(imagesContainer({ imageCount : imageCount || 0  }))}
+            className={cx(imagesContainer({ imageCount: imageCount || 0 }))}
             // classNamew="grid grid-cols-2 h-full gap-8 md:grid-cols-1 lg:grid-cols-2 col-auto "
           >
             {Array.isArray(images) &&
@@ -145,7 +146,7 @@ const Cta: FC<ICtaComponent> = ({
                       src={img?.url}
                       fallbackSrc={img?.url}
                       classNames={{
-                        img: "w-full h-full object-containx ",
+                        img: "w-full h-full object-cover ",
                         wrapper: "h-full w-full",
                         zoomedWrapper: "h-full w-full",
                       }}

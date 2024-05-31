@@ -15,6 +15,16 @@ export interface ICta extends Entry {
   };
 }
 
+export interface IRichContentBlock extends Entry {
+  fields: {
+    internalTitle: EntryFields.Symbol;
+    body: EntryFields.RichText;
+    images?: EntryFields.Array<IPexelsImageWrapper | IImageWrapper>;
+    backgroundColor: EntryFields.Symbol<"Primary" | "Secondary" | "Default" | "None">;
+
+  };
+}
+
 export interface IHeroBanner extends Entry {
   fields: {
     internalTitle: EntryFields.Symbol;

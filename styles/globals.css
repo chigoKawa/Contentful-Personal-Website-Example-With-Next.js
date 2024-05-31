@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+ 
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1 {
+    @apply  text-4xl font-bold  tracking-tight lg:text-5xl;
+  }
+  h2 {
+    @apply font-bold break-normal text-2xl md:text-4xl;
+  }
+  h3 {
+    @apply font-bold break-normal text-xl md:text-3xl;
+  }
+  h3 {
+    @apply font-bold break-normal text-lg md:text-2xl;
+  }
+  h4 {
+    @apply font-bold break-normal text-lg md:text-xl;
+  }
+  h5 {
+    @apply font-bold break-normal text-lg md:text-lg;
+  }
+  h6 {
+    @apply font-bold break-normal text-base md:text-lg;
+  }
+  
+
+
+}
+
 @layer components {
   .component-spacing {
     @apply max-w-6xl m-auto px-4;
@@ -39,3 +72,33 @@
     @apply pb-10;
   }
 }
+
+ol {
+  list-style-type: decimal !important;
+}
+
+ol > li > ol {
+  list-style-type: upper-alpha !important;
+}
+ol > li > ol > li > ol {
+  list-style-type: upper-roman !important;
+}
+
+ol > li > ol > li > ol > li > ol {
+  list-style-type: lower-alpha !important;
+}
+ol > li > ol > li > ol > li > ol > li > ol {
+  list-style-type: lower-roman !important;
+}
+
+ul {
+  list-style-type: disc !important;
+}
+
+ul > li > ul {
+  list-style-type: circle !important;
+}
+ul > li > ul > li > ul {
+  list-style-type: square !important;
+}
+

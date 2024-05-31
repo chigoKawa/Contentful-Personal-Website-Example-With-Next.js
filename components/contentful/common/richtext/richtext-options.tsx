@@ -28,18 +28,16 @@ const OrderedList = ({ node, children }: NodeChildrenType) => {
 };
 const UnorderedList = ({ node, children }: NodeChildrenType) => {
   return (
-    <ul className=" marker:text-accent my-6 ml-6 list-disc [&>li]:mt-2 ">
+    <ul className=" marker:text-primaryx my-6 ml-6 list-discx [&>li]:mt-2 [&>li]:ml-4  ">
       {children}
     </ul>
   );
 };
 
-const ListItem = ({ node, children }: NodeChildrenType) => {
+const ListItem2 = ({ node, children }: NodeChildrenType) => {
   const UnTaggedChildren = documentToReactComponents(node, {
     renderMark: {
-      [MARKS.CODE]: (text: any) => (
-        <RichTextCodeMark>{text}</RichTextCodeMark>
-      ),
+      [MARKS.CODE]: (text: any) => <RichTextCodeMark>{text}</RichTextCodeMark>,
       [MARKS.BOLD]: (text: any) => <BoldText>{text}</BoldText>,
     },
     renderNode: {
@@ -50,17 +48,18 @@ const ListItem = ({ node, children }: NodeChildrenType) => {
       ),
     },
   });
-  return <li className="list-item"> {UnTaggedChildren}</li>;
+  return <li className="list-item text-left "> {UnTaggedChildren}</li>;
+};
+
+const ListItem = ({ children }: NodeChildrenType) => {
+  return <li className="list-item text-left">{children}</li>;
 };
 
 const generateOptions = (props = {}) => {
-  
- 
   return {
+    // preserveWhitespace: true,
     renderMark: {
-      [MARKS.CODE]: (text: any) => (
-        <RichTextCodeMark>{text}</RichTextCodeMark>
-      ),
+      [MARKS.CODE]: (text: any) => <RichTextCodeMark>{text}</RichTextCodeMark>,
       [MARKS.BOLD]: (text: any) => <BoldText>{text}</BoldText>,
     },
     renderNode: {
@@ -112,7 +111,8 @@ const generateOptions = (props = {}) => {
       // ),
     },
 
-    renderText: (text: string) => text.replace("!", "?"),
+    // renderText: (text: string) => text.replace("!", "?"),
+
     // renderText: text =>
     //     text.split('\n').flatMap((text, i) => [i > 0 && <br />, text]),
   };

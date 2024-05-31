@@ -10,11 +10,12 @@ const ComponentResolver = React.forwardRef((props: any, ref) => {
 
   const Component = componentMap[contentType];
   if (!Component) {
-    return null;
+    return <>!{contentType}</>;
   }
 
   return (
     <div className="">
+      
       <Component {...field} {...props} className={props.className} />
     </div>
   );

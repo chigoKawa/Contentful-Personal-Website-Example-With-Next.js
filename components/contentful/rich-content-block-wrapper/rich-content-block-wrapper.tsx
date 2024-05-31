@@ -1,14 +1,15 @@
-import React, { FC, HTMLAttributes } from "react";
-import { IHeroBanner, ICta } from "@/lib/contentful/interfaces/components";
-import Banner from "@/components/ui/hero-banner/banner/banner";
-import HeroBanner from "@/components/ui/hero-banner/hero-banner";
-import Cta from "@/components/ui/cta/cta";
-import { IImage, ILink } from "@/lib/shared/interfaces/topics";
-import { cva, cx, VariantProps } from "class-variance-authority";
+import generateOptions from "@/components/contentful/common/richtext/richtext-options";
+import RichContentBlock from "@/components/ui/rich-content-block/rich-content-block";
 import {
-  retrieveImageUrlFromMediaWrapper,
-  transformBaseButtonToLink,
+  retrieveImageUrlFromMediaWrapper
 } from "@/lib/contentful/helpers/common";
+import {
+  IRichContentBlock
+} from "@/lib/contentful/interfaces/components";
+import { IImage } from "@/lib/shared/interfaces/topics";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { cva, cx, VariantProps } from "class-variance-authority";
+import React, { FC, HTMLAttributes } from "react";
 
 const ctaContainer = cva([], {
   variants: {
@@ -38,36 +39,33 @@ const DivWrapper: FC<CtaWrapperProps> = ({
     <div className={cx(ctaContainer({ backgroundColor }))}>{children}</div>
   );
 };
-const CtaWrapper: FC<ICta> = (entry) => {
+const RichContentBlockWrapper: FC<IRichContentBlock> = (entry) => {
   const body = entry?.fields?.body || "";
-  const title = entry?.fields?.title || "";
+
   const images: IImage[] | null = entry?.fields?.images
     ? entry?.fields?.images?.map((img: any) =>
         retrieveImageUrlFromMediaWrapper(img)
       )
     : null;
 
-  const actions: ILink[] | null = entry?.fields?.actionButtons
-    ? entry?.fields?.actionButtons?.map((btn: any) =>
-        transformBaseButtonToLink(btn)
-      )
-    : null;
+  // const actions: ILink[] | null = entry?.fields?.actionButtons
+  //   ? entry?.fields?.actionButtons?.map((btn: any) =>
+  //       transformBaseButtonToLink(btn)
+  //     )
+  //   : null;
 
-  // const imageData = retrieveImageUrlFromMediaWrapper(entry?.fields?.image)
   const backgroundColor = entry?.fields?.backgroundColor || "Default";
   return (
     <div className="">
-      {/* <pre className="">{JSON.stringify(images, null, 2)}</pre> */}
       <DivWrapper backgroundColor={backgroundColor}>
         <div className="spacing-component-padding ">
-          <Cta
+          <RichContentBlock
             entryId={entry?.sys?.id}
-            title={title}
-            body={body}
+            body={
+              body ? documentToReactComponents(body, generateOptions()) : ""
+            }
             images={images}
-            actions={actions}
             backgroundColor={backgroundColor}
-          
           />
         </div>
       </DivWrapper>
@@ -75,4 +73,4 @@ const CtaWrapper: FC<ICta> = (entry) => {
   );
 };
 
-export default CtaWrapper;
+export default RichContentBlockWrapper;

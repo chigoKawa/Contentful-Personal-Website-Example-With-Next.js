@@ -1,6 +1,6 @@
 'use client'
 
-import ComponentResolver from '../../component-resolver'
+import ComponentResolver from '@/components/contentful/common/component-resolver'
 
 
 type Props = {

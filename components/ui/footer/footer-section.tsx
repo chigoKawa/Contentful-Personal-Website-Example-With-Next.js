@@ -29,6 +29,7 @@ const FooterSection: FC<IProps> = ({ section }) => {
               data-contentful-entry-id={nvItem?.sys?.id}
               data-contentful-field-id={"label"}
               key={`${nvItem?.sys?.id}-${nvx}`}
+              className="!list-none"
             >
               <a
                 target="_blank"

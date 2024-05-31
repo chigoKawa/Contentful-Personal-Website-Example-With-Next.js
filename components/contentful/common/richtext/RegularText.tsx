@@ -34,8 +34,7 @@ const RegularText = ({ node, children }: Props) => {
 
 
   return (
-    <p className="leading-loose px-4  ">
-      {/* {JSON.stringify(node)} */}
+    <p className="leading-loose px-4x  ">
       {children.map((line: any, lx: number) => {
         if (!line) {
           return <br key={lx} />;

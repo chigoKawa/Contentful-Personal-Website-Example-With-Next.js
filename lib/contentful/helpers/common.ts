@@ -178,6 +178,7 @@ export const transformBaseButtonToLink = (button: IBaseButton): ILink => {
     color: getColor(button?.fields?.color),
     variant: getVariant(button?.fields?.variant),
     size: getSize(button?.fields?.size) || "md",
+    openInNewTab: button?.fields?.openInNewTab
   };
 
   return link;

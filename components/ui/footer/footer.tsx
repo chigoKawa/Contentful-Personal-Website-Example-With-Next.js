@@ -66,16 +66,17 @@ const Footer: FC<INavbar> = ({ navEntry }) => {
         </div>
 
         <div className="mt-16">
-          <ul className="flex justify-center gap-6 sm:justify-end">
+          <ul className="flex justify-center gap-6 sm:justify-end list-none">
             {navEntry?.fields?.socialLinks?.map((lnk, lnx) => {
               return (
                 <Link
                   key={`${lnk?.sys?.id}-${lnx}`}
                   isExternal
                   href={lnk ? retrieveUrlFromTarget(lnk) : "/"}
-                  aria-label="Twitter"
+                  aria-label={lnk?.fields?.title}
                 >
                   <div className="text-foreground">
+                    
                     <IconPicker name={lnk?.fields?.optionalIcon || ""} />
                   </div>
                 </Link>
