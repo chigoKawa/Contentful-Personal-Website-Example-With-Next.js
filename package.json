@@ -2,6 +2,9 @@
 	"name": "next-app-template",
 	"version": "0.0.1",
 	"private": true,
+	"peerDependencies": {
+		"any-observable": "^0.5.1"
+	  },
 	"scripts": {
 		"dev": "next dev",
 		"build": "node get-themes-ctf.cjs && next build",
