@@ -15,6 +15,7 @@ export async function POST(request: Request) {
   try {
     const res = await request.json();
 
+
     const spaceId = res?.data?.space_id || "";
     const managementToken = res?.data?.mgt_access_token || "";
     const envId = res?.data?.envId || "master";
@@ -33,6 +34,8 @@ export async function POST(request: Request) {
       }
     );
 
+   
+
     // const entries = await scopedPlainClient.entry.getMany({
     //   query: {
     //     skip: 10,
@@ -47,9 +50,9 @@ export async function POST(request: Request) {
       environmentId: envId,
     };
 
-    const importResp = await ctfImport(importOptions);
+    // const importResp = await ctfImport(importOptions);
 
-    return NextResponse.json({ message: importResp });
+    return NextResponse.json({ message: "importResp" });
   } catch (error) {
     let errorMessage: string;
     const anyError: any = error;
