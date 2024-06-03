@@ -14,9 +14,7 @@ import {
   Link,
 } from "@nextui-org/react";
 
-const initialState = {
-  message: "",
-};
+
 const SpaceSetup = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [errorMsgs, setErrorMsgs] = useState<any>(false);
@@ -45,8 +43,9 @@ const SpaceSetup = () => {
       return;
     }
     axios
-      .post("/xsetup/send", { data: rawFormData })
+      .post("/api/seed-space", { data: rawFormData })
       .then((d) => {
+        console.log("result", d)
         setHasError(d?.data?.hasError || false);
         setErrorMsgs(d?.data?.messages || false);
         setErrorMsg(d?.data?.message || "");
