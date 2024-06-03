@@ -1,6 +1,8 @@
 import { createClient } from "contentful-management";
 import { NextResponse } from "next/server";
 
+export const maxDuration = 300
+
 const contentfulSpaceExportFile = require("@/json/contentful-space-export.json");
 
 async function cleanSpace(client: any) {
