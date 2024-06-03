@@ -214,7 +214,7 @@ async function createAndPublishAsset(client: any, asset: any) {
     console.log("Asset published:", publishedAsset?.sys.id);
   } catch (error) {
     console.error(`Error creating asset ${asset.sys.id}:`, error);
-    throw error;
+    // throw error;
   }
 }
 
@@ -267,7 +267,7 @@ export async function POST(request: Request) {
     );
     //  clean the space
 
-    await cleanSpace(client);
+    // await cleanSpace(client);
 
     // Create and publish content types
     for (const contentType of contentfulSpaceExportFile.contentTypes) {
