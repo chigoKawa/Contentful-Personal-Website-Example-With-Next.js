@@ -1,15 +1,15 @@
-import { redirect } from "next/navigation";
-import { revalidateTag } from "next/cache";
-import contentful from "contentful-management";
 import { createClient } from "contentful-management";
-import { NextResponse } from 'next/server'
+import { NextResponse } from "next/server";
 
-import { NextApiRequest, NextApiResponse } from "next";
+import 'any-observable/register/zen';
+
+
+
 
 import { ctfImport } from "../../ctf-import.mjs";
 const contentfulSPaceExportFile = require("@/json/contentful-space-export.json");
 
-export async function POST(request: Request, response:NextApiResponse ) {
+export async function POST(request: Request) {
   try {
     const res = await request.json();
 
