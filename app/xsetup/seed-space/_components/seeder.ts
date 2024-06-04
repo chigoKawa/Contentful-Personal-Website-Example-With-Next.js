@@ -1,7 +1,9 @@
+"use client";
 import { createClient } from "contentful-management";
 import { NextResponse } from "next/server";
-
-// export const maxDuration = 300
+// import {spaceImport} from "../../../ctf-import.mjs"
+import spaceImport from "contentful-import";
+import contentfulSPaceJson from "@/json/contentful-space-export.json";
 
 const contentfulSpaceExportFile = require("@/json/contentful-space-export.json");
 
@@ -10,19 +12,39 @@ async function cleanSpace(client: any) {
   // delete entries
   console.error(`Deleting!  entries`, entries);
   for (const entry of entries.items) {
-    if (entry.sys.firstPublishedAt) {
+    if (entry.sys.publishedVersion) {
       console.log(`Unpublishing entry "${entry.sys.id}"`);
 
-      await client.entry.unpublish(
-        {
-          entryId: entry?.sys?.id,
-        },
-        { ...entry }
-      );
+      try {
+        await client.entry.unpublish(
+          {
+            entryId: entry?.sys?.id,
+          },
+          { ...entry }
+        );
+      } catch (error) {}
     }
 
     await client.entry.delete({
       entryId: entry?.sys?.id,
+    });
+  }
+
+  // Clean assets
+  const assets = await client.asset.getMany({});
+  console.error(`Deleting ${assets.total} assets`);
+  for (const asset of assets.items) {
+    console.log("asset sys", asset.sys);
+    if (asset.sys.firstPublishedAt) {
+      console.log(`Unpublishing asset "${asset.sys.id}"`);
+      try {
+        await client.asset.unpublish({
+          assetId: asset.sys.id,
+        });
+      } catch (error) {}
+    }
+    await client.asset.delete({
+      assetId: asset.sys.id,
     });
   }
 
@@ -134,16 +156,17 @@ async function updateAndPublishEntries(
         { entryId: entryToUpdate.sys.id },
         { sys: entryToUpdate.sys, fields: entryToUpdate.fields }
       );
-
-      const publishedEntry = await client.entry.publish(
-        {
-          entryId: updatedEntry.sys.id,
-        },
-        {
-          ...updatedEntry,
-        }
-      );
-      console.log(`Entry published: ${publishedEntry.sys.id}`);
+      try {
+        const publishedEntry = await client.entry.publish(
+          {
+            entryId: updatedEntry.sys.id,
+          },
+          {
+            ...updatedEntry,
+          }
+        );
+        console.log(`Entry published: ${publishedEntry.sys.id}`);
+      } catch (error) {}
     } catch (error) {
       console.error(
         `Error updating or publishing entry ${entry.sys.id}:`,
@@ -251,6 +274,65 @@ async function createAndPublishEntry(client: any, entry: any) {
     console.error(`Error creating entry ${entry.sys.id}:`, error);
     throw error;
   }
+}
+
+export async function seedTheSpace({ managementToken, spaceId, envId }: any) {
+  try {
+    console.log("from seed the space", managementToken);
+    const client = createClient(
+      { accessToken: managementToken },
+      {
+        type: "plain",
+        defaults: { spaceId, environmentId: envId },
+      }
+    );
+    const options = {
+      content: contentfulSPaceJson,
+      spaceId: spaceId,
+      managementToken: managementToken,
+    };
+
+    await cleanSpace(client);
+
+    // Create and publish content types
+    for (const contentType of contentfulSpaceExportFile.contentTypes) {
+      // console.log('oya', contentType)
+      await createAndPublishContentType(client, contentType);
+    }
+    // Create and publish assets
+    for (const asset of contentfulSpaceExportFile.assets) {
+      await createAndPublishAsset(client, asset);
+    }
+
+    // Create and publish entries
+    // for (const entry of contentfulSpaceExportFile.entries) {
+    //   await createAndPublishEntry(client, entry);
+    // }
+
+    // Create entries without publishing
+    const createdEntries = await createEntriesWithoutPublishing(
+      client,
+      contentfulSpaceExportFile.entries
+    );
+
+    // Update and publish entries
+    await updateAndPublishEntries(
+      client,
+      contentfulSpaceExportFile.entries,
+      createdEntries
+    );
+
+    return { message: "Space setup was successful" };
+  } catch (error) {
+    let errorMessage = "An unknown error occurred.";
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+    console.error("Error during Contentful import:", error);
+    return { message: errorMessage, hasError: true };
+  }
+
+  console.log("from seed the space", spaceId);
 }
 
 export async function POST(request: Request) {

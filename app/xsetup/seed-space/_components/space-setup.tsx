@@ -1,6 +1,7 @@
 "use client";
 import { Input } from "@nextui-org/react";
 import { useState } from "react";
+import { seedTheSpace } from "./seeder";
 
 import axios from "axios";
 
@@ -14,7 +15,6 @@ import {
   Link,
 } from "@nextui-org/react";
 
-
 const SpaceSetup = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [errorMsgs, setErrorMsgs] = useState<any>(false);
@@ -22,39 +22,59 @@ const SpaceSetup = () => {
   const [hasError, setHasError] = useState<boolean>(false);
 
   const handleSubmit = (formData: FormData) => {
+    const spaceId = formData.get("space_id") || "";
+    const managementToken = formData.get("mgt_access_token") || "";
+    const envId = formData.get("env_id") || "";
+
+    if (!spaceId || !managementToken || !envId) {
+      alert("All fields are required");
+
+      return;
+    }
+
+    const hasConsent = confirm(
+      "This would wipe clean the selected space!!! Do you want to proceed?"
+    );
+
+    if (!hasConsent) {
+      return;
+    }
+
     setErrorMsg("");
     setErrorMsgs(false);
     setIsProcessing(true);
     setHasError(false);
 
-    const spaceId = formData.get("space_id") || "";
-    const managementToken = formData.get("mgt_access_token") || "";
-    const envId = formData.get("env_id") || "";
-
-    const rawFormData = {
-      mgt_access_token: formData.get("mgt_access_token"),
-      space_id: formData.get("space_id"),
-      envId: formData.get("env_id"),
-    };
-
-    if (!spaceId || !managementToken || !envId) {
-      alert("All fields are required");
-      setIsProcessing(false);
-      return;
-    }
-    axios
-      .post("/api/seed-space", { data: rawFormData })
-      .then((d) => {
-        console.log("result", d)
-        setHasError(d?.data?.hasError || false);
-        setErrorMsgs(d?.data?.messages || false);
-        setErrorMsg(d?.data?.message || "");
+    seedTheSpace({ spaceId, managementToken, envId })
+      .then((d: any) => {
+        console.log("e don do!!!", d);
+        setHasError(d?.hasError || false);
+        setErrorMsgs(d?.messages || false);
+        setErrorMsg(d?.message || "");
         setIsProcessing(false);
       })
       .catch((err) => {
-        console.error(err);
         setIsProcessing(false);
+        setHasError(true);
+        setErrorMsg(err);
+      
       });
+
+    return;
+
+    // axios
+    //   .post("/api/seed-space", { data: rawFormData })
+    //   .then((d) => {
+    //     console.log("result", d);
+    //     setHasError(d?.data?.hasError || false);
+    //     setErrorMsgs(d?.data?.messages || false);
+    //     setErrorMsg(d?.data?.message || "");
+    //     setIsProcessing(false);
+    //   })
+    //   .catch((err) => {
+    //     console.error(err);
+    //     setIsProcessing(false);
+    //   });
   };
 
   return (
@@ -69,7 +89,7 @@ const SpaceSetup = () => {
             </p>
             <p className="text-danger-500">
               **For enhanced security, consider utilizing a temporary Content
-              Management API (CMA) token or deleting it after its intended use.
+              Management API (CMA) token or deleting it after using it.
             </p>
           </div>
         </CardHeader>
