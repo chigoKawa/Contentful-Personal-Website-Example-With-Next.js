@@ -56,8 +56,16 @@ export interface IPerson extends Entry {
 export interface ICodeSnippet extends Entry {
   fields: {
     internalTitle: EntryFields.Symbol;
-    code: EntryFields.Text;
+    codeBlock: EntryFields.Text;
     language: EntryFields.Symbol;
+  };
+}
+
+export interface ITopicDefinition extends Entry {
+  fields: {
+    internalTitle: EntryFields.Symbol;
+    topic: EntryFields.Symbol;
+    definition: EntryFields.Text;
   };
 }
 

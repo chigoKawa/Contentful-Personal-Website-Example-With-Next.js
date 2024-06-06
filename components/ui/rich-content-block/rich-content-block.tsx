@@ -22,7 +22,7 @@ const metaSection = cva(
   {
     variants: {
       backgroundColor: {
-        Default: "bg-foreground-900 text-background",
+        Default: "bg-foreground-900x bg-foreground-500 text-background",
         Primary: "bg-primary-500 text-primary-foreground",
         Secondary: "bg-background-100 text-foreground",
         None: "bg-foreground-700 text-background",

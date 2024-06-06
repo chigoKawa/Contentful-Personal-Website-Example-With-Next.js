@@ -19,6 +19,7 @@ export const fetchLandingPageWithSlug = async ({
   slug: string;
   preview?: boolean;
 }) => {
+ 
   try {
     const response = await client(preview).getEntries<LandingPageSkeleton>({
       content_type: CONTENT_TYPE_NAME,
@@ -26,8 +27,10 @@ export const fetchLandingPageWithSlug = async ({
       "fields.slug": slug,
       include: INCLUDES_COUNT,
     });
+   
     return response.items?.[0];
   } catch (error) {
+    console.error(error)
     return null;
   }
 };

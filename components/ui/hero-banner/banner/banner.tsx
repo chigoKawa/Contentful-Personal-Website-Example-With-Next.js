@@ -1,17 +1,9 @@
-import React, { useState, FC } from "react";
-import useDimensions from "react-cool-dimensions";
-import CustomButton from "@/components/primitives/custom-button/custom-button";
+import { FC } from "react";
 
 import { IImage, ILink } from "@/lib/shared/interfaces/topics";
-import NextImage from "next/image";
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Image,
   Button,
-  Link,
+  Link
 } from "@nextui-org/react";
 
 interface IBanner {
@@ -23,7 +15,8 @@ interface IBanner {
 }
 const Banner: FC<IBanner> = ({ img, headline, body, actions, entryId }) => {
   return (
-    <section className=" bg-background-100 text-foreground">
+    <section className="bg-background-100 text-foreground">
+      
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-xl text-center">
           <h1
@@ -32,9 +25,11 @@ const Banner: FC<IBanner> = ({ img, headline, body, actions, entryId }) => {
             className="text-3xl font-extrabold sm:text-5xl"
           >
             {headline?.[0]}
-            <strong className="font-extrabold text-danger-700 sm:block">
-              {headline?.[1]}
-            </strong>
+            {headline?.[1] && (
+              <strong className="font-extrabold text-danger-700 sm:block">
+                {headline?.[1]}
+              </strong>
+            )}
           </h1>
           <p
             data-contentful-entry-id={entryId}

@@ -55,24 +55,7 @@ interface INavbar {
   navEntry: INavigationMenu;
 }
 
-const items = [
-  {
-    key: "new",
-    label: "New file",
-  },
-  {
-    key: "copy",
-    label: "Copy link",
-  },
-  {
-    key: "edit",
-    label: "Edit file",
-  },
-  {
-    key: "delete",
-    label: "Delete file",
-  },
-];
+
 
 const NavMenuSubItem = ({ item }: { item: INavigationItem }) => {
   const subNavigationItems: any | undefined = item?.fields?.subNavigationItems;

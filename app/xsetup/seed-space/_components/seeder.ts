@@ -1,11 +1,33 @@
 "use client";
 import { createClient } from "contentful-management";
-import { NextResponse } from "next/server";
-// import {spaceImport} from "../../../ctf-import.mjs"
-import spaceImport from "contentful-import";
+
 import contentfulSPaceJson from "@/json/contentful-space-export.json";
 
 const contentfulSpaceExportFile = require("@/json/contentful-space-export.json");
+
+async function importEditorInterfaces(client: any, contentfulSpaceExportFile: any) {
+  try {
+    for (const editorInterface of contentfulSpaceExportFile.editorInterfaces) {
+      const contentTypeId = editorInterface?.sys?.contentType?.sys?.id;
+      if (contentTypeId) {
+        console.log(`Importing editor interface for content type "${contentTypeId}"`);
+        
+        // Fetch the current editor interface to get the version number
+        const currentEditorInterface = await client.editorInterface.get({ contentTypeId });
+        const currentVersion = currentEditorInterface.sys.version;
+
+        await client.editorInterface.update(
+          { contentTypeId },
+          { ...editorInterface, sys: { version: currentVersion } }
+        );
+      }
+    }
+    console.log("Editor interfaces imported successfully.");
+  } catch (error) {
+    console.error("Error importing editor interfaces:", error);
+    throw error;
+  }
+}
 
 async function cleanSpace(client: any) {
   const entries = await client.entry.getMany({});
@@ -53,7 +75,7 @@ async function cleanSpace(client: any) {
   const contentTypes = await client.contentType.getMany({});
   let totalContentTypes = contentTypes.total;
   console.log(`Deleting! ${totalContentTypes} content types`);
-  console.log(contentTypes);
+
   for (const contentType of contentTypes.items) {
     if (contentType.sys.firstPublishedAt) {
       console.log(`Unpublishing content type "${contentType.sys.id}"`);
@@ -243,42 +265,8 @@ async function createAndPublishAsset(client: any, asset: any) {
   }
 }
 
-async function createAndPublishEntry(client: any, entry: any) {
-  try {
-    // const createdEntry = await client.entry.createWithId(
-    //   { entryId: entry.sys.id, contentTypeId: entry.sys.contentType.sys.id },
-    //   { fields: entry.fields }
-    // );
-
-    client.entry
-      .create(
-        { contentTypeId: entry?.sys?.contentType?.sys?.id },
-        {
-          fields: entry.fields,
-        }
-      )
-      .then((entryRecord: any) => {
-        client.entry.publish(
-          { entryId: entryRecord.sys.id },
-          {
-            ...entryRecord,
-          }
-        );
-      })
-      .catch((er: any) => {
-        throw er;
-      });
-
-    // console.log(`Entry published: ${createdEntry.sys.id}`);
-  } catch (error) {
-    console.error(`Error creating entry ${entry.sys.id}:`, error);
-    throw error;
-  }
-}
-
 export async function seedTheSpace({ managementToken, spaceId, envId }: any) {
   try {
-    console.log("from seed the space", managementToken);
     const client = createClient(
       { accessToken: managementToken },
       {
@@ -286,28 +274,21 @@ export async function seedTheSpace({ managementToken, spaceId, envId }: any) {
         defaults: { spaceId, environmentId: envId },
       }
     );
-    const options = {
-      content: contentfulSPaceJson,
-      spaceId: spaceId,
-      managementToken: managementToken,
-    };
 
     await cleanSpace(client);
 
     // Create and publish content types
     for (const contentType of contentfulSpaceExportFile.contentTypes) {
-      // console.log('oya', contentType)
       await createAndPublishContentType(client, contentType);
     }
+
+    //  update editor interface
+    await importEditorInterfaces(client, contentfulSpaceExportFile);
+
     // Create and publish assets
     for (const asset of contentfulSpaceExportFile.assets) {
       await createAndPublishAsset(client, asset);
     }
-
-    // Create and publish entries
-    // for (const entry of contentfulSpaceExportFile.entries) {
-    //   await createAndPublishEntry(client, entry);
-    // }
 
     // Create entries without publishing
     const createdEntries = await createEntriesWithoutPublishing(
@@ -330,64 +311,5 @@ export async function seedTheSpace({ managementToken, spaceId, envId }: any) {
     }
     console.error("Error during Contentful import:", error);
     return { message: errorMessage, hasError: true };
-  }
-
-  console.log("from seed the space", spaceId);
-}
-
-export async function POST(request: Request) {
-  try {
-    const res = await request.json();
-    const spaceId = res?.data?.space_id || "";
-    const managementToken = res?.data?.mgt_access_token || "";
-    const envId = res?.data?.envId || "master";
-
-    const client = createClient(
-      { accessToken: managementToken },
-      {
-        type: "plain",
-        defaults: { spaceId, environmentId: envId },
-      }
-    );
-    //  clean the space
-
-    // await cleanSpace(client);
-
-    // Create and publish content types
-    for (const contentType of contentfulSpaceExportFile.contentTypes) {
-      await createAndPublishContentType(client, contentType);
-    }
-
-    // Create and publish assets
-    for (const asset of contentfulSpaceExportFile.assets) {
-      await createAndPublishAsset(client, asset);
-    }
-
-    // Create and publish entries
-    // for (const entry of contentfulSpaceExportFile.entries) {
-    //   await createAndPublishEntry(client, entry);
-    // }
-
-    // Create entries without publishing
-    const createdEntries = await createEntriesWithoutPublishing(
-      client,
-      contentfulSpaceExportFile.entries
-    );
-
-    // Update and publish entries
-    await updateAndPublishEntries(
-      client,
-      contentfulSpaceExportFile.entries,
-      createdEntries
-    );
-
-    return NextResponse.json({ message: "Space setup was successful" });
-  } catch (error) {
-    let errorMessage = "An unknown error occurred.";
-    if (error instanceof Error) {
-      errorMessage = error.message;
-    }
-    console.error("Error during Contentful import:", error);
-    return NextResponse.json({ message: errorMessage, hasError: true });
   }
 }

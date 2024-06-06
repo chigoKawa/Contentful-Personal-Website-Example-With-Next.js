@@ -1,5 +1,6 @@
 import { IImageWrapper, IPexelsImageWrapper } from "../interfaces/topics";
 import { IImage } from "@/lib/shared/interfaces/topics";
+import { formatDistanceToNow } from 'date-fns';
 
 import { ILink } from "@/lib/shared/interfaces/topics";
 import { IBaseButton } from "@/lib/contentful/interfaces/blocks";
@@ -204,3 +205,7 @@ export const isEmptyRichTextField = (richText: any) => {
 
   return isEmpty;
 };
+export const transformTimestamp = (timestamp: string) => {
+  return formatDistanceToNow(new Date(timestamp), { addSuffix: true });
+};
+

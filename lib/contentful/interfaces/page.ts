@@ -16,14 +16,12 @@ export interface ICategoryPage extends Entry {
     internalTitle: EntryFields.Symbol;
     title: EntryFields.Symbol;
     slug: EntryFields.Symbol;
-    introText?: EntryFields.RichText;
-    body: EntryFields.RichText;
-    announcement: EntryFields.EntryLink<AnnouncementSkeleton>;
-    seo?: ISeo;
+    // introText?: EntryFields.RichText;
+    // body: EntryFields.RichText;
+    // announcement: EntryFields.EntryLink<AnnouncementSkeleton>;
+    seoMetadata?: ISeo;
     heroBanner?: EntryFields.EntryLink<HeroBannerSkeleton>;
-    //   content?: contentful.EntryFields.Array<
-    //   contentful.EntryFields.EntryLink<HeroBannerSkeleton | DuplexSectionSkeleton>
-    // >;
+
   };
 }
 
@@ -37,21 +35,19 @@ export interface IBlogPostPage extends Entry {
     title: EntryFields.Symbol;
     slug: EntryFields.Symbol;
     publishedDate?: EntryFields.Date;
-    introText?: EntryFields.RichText;
+    summary?: EntryFields.RichText;
     body: EntryFields.RichText;
     featuredImage: IImageWrapper | IPexelsImageWrapper;
-    announcement: EntryFields.EntryLink<AnnouncementSkeleton>;
-    seo?: ISeo;
+    announcement?: EntryFields.EntryLink<AnnouncementSkeleton>;
+    seoMetadata?: ISeo;
     author?: IPerson;
-    category?: EntryFields.EntryLink<CategoryPageSkeleton>;
-    //   content?: contentful.EntryFields.Array<
-    //   contentful.EntryFields.EntryLink<HeroBannerSkeleton | DuplexSectionSkeleton>
-    // >;
+    category?: ICategoryPage;
+
   };
 }
 
 export type BlogPostPageSkeleton = {
-  contentTypeId: "blogPostPage";
+  contentTypeId: "blogPost";
   fields: IBlogPostPage["fields"];
 };
 

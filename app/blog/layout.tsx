@@ -1,13 +1,22 @@
-export default function BlogLayout({
-	children,
+
+import BreadCrumbs from "./_components/bread-crumbs";
+export default function DashboardLayout({
+  children,
+  params,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
+  params: {
+    slug: string;
+    catagory: string;
+  };
 }) {
-	return (
-		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-			<div className="inline-block max-w-lg text-center justify-center">
-				{children}
-			</div>
-		</section>
-	);
+  return (
+    <section>
+      {/* <div className="spacing-component-max-width px-2 pt-10 ">
+        <BreadCrumbs  />
+      </div> */}
+
+      {children}
+    </section>
+  );
 }

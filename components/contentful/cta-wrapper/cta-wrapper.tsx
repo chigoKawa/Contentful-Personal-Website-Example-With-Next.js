@@ -14,7 +14,7 @@ const ctaContainer = cva([], {
   variants: {
     backgroundColor: {
       Default: "bg-foreground-600 text-background",
-      Primary: "bg-background-100 text-primary-foregroundx",
+      Primary: "bg-primary text-primary-foreground",
       Secondary: "bg-secondary-900 text-secondary-foreground",
       None: "text-primary-foreground",
     },

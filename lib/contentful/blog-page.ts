@@ -1,7 +1,7 @@
 import { client } from "./client";
 
 import { BlogPostPageSkeleton } from "./interfaces/page";
-const CONTENT_TYPE_NAME = "blogPostPage";
+const CONTENT_TYPE_NAME = "blogPost";
 
 const INCLUDES_COUNT = 6;
 
