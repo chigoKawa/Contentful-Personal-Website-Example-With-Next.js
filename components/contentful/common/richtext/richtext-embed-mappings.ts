@@ -1,10 +1,11 @@
 import dynamic from 'next/dynamic';
+import InlinePersonWrapper from '../../person/inline-person-wrapper';
+import TopicDefinitionWrapper from '../../topic-definition/topic-definition-wrapper';
 
 
 
 export const componentMap : object = {
-    // heroBanner : dynamic(()=>import("@/cms-components/HeroBanner/Herobanner")),
-    // cardGroupContainer : dynamic(()=>import("@/cms-components/CardGroupContainer/CardGroupContainer")),
-    
+    topicDefinition :TopicDefinitionWrapper,
+    person :InlinePersonWrapper,    
     
 }

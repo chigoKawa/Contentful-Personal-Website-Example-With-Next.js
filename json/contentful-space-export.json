@@ -12,7 +12,7 @@
         "id": "cta",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:15.026Z",
-        "updatedAt": "2024-06-04T12:20:15.434Z",
+        "updatedAt": "2024-06-11T12:56:10.645Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:15.434Z",
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-11T12:56:10.645Z",
         "firstPublishedAt": "2024-06-04T12:20:15.434Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -50,7 +50,7 @@
       },
       "displayField": "internalTitle",
       "name": "💎 CTA",
-      "description": null,
+      "description": "A call-to-action block that features one or more images, designed to engage users and drive them toward a specific action. This element can be included as a section on a webpage, providing visual appeal and a clear directive for users.",
       "fields": [
         {
           "id": "internalTitle",
@@ -184,7 +184,7 @@
         "id": "imageWrapper",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:16.132Z",
-        "updatedAt": "2024-06-04T12:20:16.527Z",
+        "updatedAt": "2024-06-11T12:57:12.560Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -192,8 +192,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:16.527Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-11T12:57:12.560Z",
         "firstPublishedAt": "2024-06-04T12:20:16.527Z",
         "createdBy": {
           "sys": {
@@ -209,8 +209,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -222,7 +222,7 @@
       },
       "displayField": "internalTitle",
       "name": "🧩 Image Wrapper",
-      "description": null,
+      "description": "This component acts as a wrapper for images, ensuring the inclusion of alt text and other essential metadata for accessibility and SEO purposes. It helps standardize the way images are presented across the application.",
       "fields": [
         {
           "id": "internalTitle",
@@ -260,7 +260,7 @@
           "name": "Alt Text",
           "type": "Symbol",
           "localized": false,
-          "required": false,
+          "required": true,
           "validations": [
             {
               "size": {
@@ -337,7 +337,7 @@
         "id": "externalLink",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:17.209Z",
-        "updatedAt": "2024-06-04T12:20:17.564Z",
+        "updatedAt": "2024-06-11T12:56:32.336Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -345,8 +345,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:17.564Z",
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-11T12:56:32.336Z",
         "firstPublishedAt": "2024-06-04T12:20:17.564Z",
         "createdBy": {
           "sys": {
@@ -362,8 +362,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -375,7 +375,7 @@
       },
       "displayField": "internalTitle",
       "name": "🔗 External Link",
-      "description": null,
+      "description": "This component is designed for links to external resources, such as Instagram or other platforms, to ensure a single source of truth and facilitate reuse. It centralizes link management, allowing consistent reference and easy updates across Contentful content.",
       "fields": [
         {
           "id": "internalTitle",
@@ -454,7 +454,7 @@
         "id": "person",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:18.260Z",
-        "updatedAt": "2024-06-04T12:20:18.579Z",
+        "updatedAt": "2024-06-11T12:57:59.893Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -462,8 +462,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:18.579Z",
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-11T12:57:59.893Z",
         "firstPublishedAt": "2024-06-04T12:20:18.579Z",
         "createdBy": {
           "sys": {
@@ -479,8 +479,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -492,7 +492,7 @@
       },
       "displayField": "internalTitle",
       "name": "🧩 Person",
-      "description": null,
+      "description": "This topic is designed to manage content related to individuals, including their name and avatar.",
       "fields": [
         {
           "id": "internalTitle",
@@ -623,7 +623,7 @@
         "id": "seo",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:19.146Z",
-        "updatedAt": "2024-06-04T12:20:19.472Z",
+        "updatedAt": "2024-06-11T12:59:22.790Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -631,8 +631,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:19.472Z",
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-11T12:59:22.790Z",
         "firstPublishedAt": "2024-06-04T12:20:19.472Z",
         "createdBy": {
           "sys": {
@@ -648,8 +648,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -661,7 +661,7 @@
       },
       "displayField": "internalTitle",
       "name": "🔍 SEO",
-      "description": null,
+      "description": "A topic for managing SEO metadata, ensuring each page has optimized tags and information for search engine visibility. This includes handling key elements like title tags, meta descriptions, and other attributes that influence SEO.",
       "fields": [
         {
           "id": "internalTitle",
@@ -774,7 +774,7 @@
         "id": "pexelsImageWrapper",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:20.181Z",
-        "updatedAt": "2024-06-04T12:46:31.781Z",
+        "updatedAt": "2024-06-11T12:58:25.689Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -782,8 +782,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-06-04T12:46:31.781Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-11T12:58:25.689Z",
         "firstPublishedAt": "2024-06-04T12:20:20.527Z",
         "createdBy": {
           "sys": {
@@ -799,8 +799,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -812,7 +812,7 @@
       },
       "displayField": "internalTitle",
       "name": "🧩 Pexels Image Wrapper",
-      "description": null,
+      "description": "This topic manages images sourced from Pexels, a platform that offers a wide selection of free-to-use photographs and graphics.",
       "fields": [
         {
           "id": "internalTitle",
@@ -904,7 +904,7 @@
         "id": "heroBanner",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:21.146Z",
-        "updatedAt": "2024-06-04T12:20:21.524Z",
+        "updatedAt": "2024-06-11T12:56:50.360Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -912,8 +912,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:21.524Z",
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-11T12:56:50.360Z",
         "firstPublishedAt": "2024-06-04T12:20:21.524Z",
         "createdBy": {
           "sys": {
@@ -929,8 +929,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -942,7 +942,7 @@
       },
       "displayField": "internalTitle",
       "name": "💎 Hero Banner",
-      "description": null,
+      "description": "A component designed for creating hero banners, which are large, attention-grabbing banners typically positioned at the top of a webpage. Hero banners often serve as the focal point, conveying key information or messaging to visitors.",
       "fields": [
         {
           "id": "internalTitle",
@@ -1076,7 +1076,7 @@
         "id": "baseButton",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:22.612Z",
-        "updatedAt": "2024-06-05T10:54:34.161Z",
+        "updatedAt": "2024-06-11T12:55:01.888Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1084,8 +1084,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-06-05T10:54:34.161Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-11T12:55:01.888Z",
         "firstPublishedAt": "2024-06-04T12:20:22.960Z",
         "createdBy": {
           "sys": {
@@ -1101,8 +1101,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1114,7 +1114,7 @@
       },
       "displayField": "internalTitle",
       "name": "🧱 Base Button",
-      "description": null,
+      "description": "This basic link button is designed for use within components like hero banners, providing a simple and effective way to create clickable links.",
       "fields": [
         {
           "id": "internalTitle",
@@ -1259,7 +1259,7 @@
         "id": "landingPage",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:23.626Z",
-        "updatedAt": "2024-06-05T10:38:29.177Z",
+        "updatedAt": "2024-06-11T12:57:34.358Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1267,8 +1267,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2024-06-05T10:38:29.177Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-11T12:57:34.358Z",
         "firstPublishedAt": "2024-06-04T12:20:23.994Z",
         "createdBy": {
           "sys": {
@@ -1284,8 +1284,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1297,7 +1297,7 @@
       },
       "displayField": "internalTitle",
       "name": "📜 Landing Page",
-      "description": null,
+      "description": "This content type is used for building generic landing pages. These pages can be assembled with various content elements and component blocks, allowing for flexible page layouts.",
       "fields": [
         {
           "id": "internalTitle",
@@ -1772,7 +1772,7 @@
         "id": "richContentBlock",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:26.550Z",
-        "updatedAt": "2024-06-04T12:20:26.855Z",
+        "updatedAt": "2024-06-11T12:58:54.502Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1780,8 +1780,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:26.855Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-11T12:58:54.502Z",
         "firstPublishedAt": "2024-06-04T12:20:26.855Z",
         "createdBy": {
           "sys": {
@@ -1797,8 +1797,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1810,7 +1810,7 @@
       },
       "displayField": "internalTitle",
       "name": " 💎 Rich Content Block",
-      "description": null,
+      "description": "A content type featuring a rich text field paired with an image, offering a dynamic and visually captivating presentation of textual content.",
       "fields": [
         {
           "id": "internalTitle",
@@ -1870,7 +1870,8 @@
                   {
                     "linkContentType": [
                       "imageWrapper",
-                      "pexelsImageWrapper"
+                      "pexelsImageWrapper",
+                      "videoWrapper"
                     ],
                     "message": null
                   }
@@ -1954,7 +1955,7 @@
         "id": "topicDefinition",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:27.397Z",
-        "updatedAt": "2024-06-04T12:40:22.041Z",
+        "updatedAt": "2024-06-11T13:00:42.130Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1962,8 +1963,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2024-06-04T12:40:22.041Z",
+        "publishedVersion": 9,
+        "publishedAt": "2024-06-11T13:00:42.130Z",
         "firstPublishedAt": "2024-06-04T12:20:27.675Z",
         "createdBy": {
           "sys": {
@@ -1979,8 +1980,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 4,
-        "version": 8,
+        "publishedCounter": 5,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1992,7 +1993,7 @@
       },
       "displayField": "internalTitle",
       "name": "🧩 Topic Definition",
-      "description": null,
+      "description": "Definition of topics. Can be used inline in a blog post",
       "fields": [
         {
           "id": "internalTitle",
@@ -2052,7 +2053,7 @@
         "id": "blogPost",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:28.219Z",
-        "updatedAt": "2024-06-04T12:50:47.785Z",
+        "updatedAt": "2024-06-11T09:56:05.582Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2060,8 +2061,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2024-06-04T12:50:47.785Z",
+        "publishedVersion": 7,
+        "publishedAt": "2024-06-11T09:56:05.582Z",
         "firstPublishedAt": "2024-06-04T12:20:28.534Z",
         "createdBy": {
           "sys": {
@@ -2077,8 +2078,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 3,
-        "version": 6,
+        "publishedCounter": 4,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2285,7 +2286,8 @@
                     "linkContentType": [
                       "pexelsImageWrapper",
                       "imageWrapper",
-                      "codeSnippet"
+                      "codeSnippet",
+                      "videoWrapper"
                     ],
                     "message": null
                   }
@@ -2503,7 +2505,7 @@
         "id": "codeSnippet",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:30.281Z",
-        "updatedAt": "2024-06-04T12:20:30.564Z",
+        "updatedAt": "2024-06-11T13:00:20.135Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2511,8 +2513,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:30.564Z",
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-11T13:00:20.135Z",
         "firstPublishedAt": "2024-06-04T12:20:30.564Z",
         "createdBy": {
           "sys": {
@@ -2528,8 +2530,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 2,
+        "version": 4,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2541,7 +2543,7 @@
       },
       "displayField": "internalTitle",
       "name": "🧩 Code Snippet",
-      "description": null,
+      "description": "Embed code with syntax highlighting & language selection. Perfect for tutorials & API references",
       "fields": [
         {
           "id": "internalTitle",
@@ -2596,6 +2598,140 @@
           "omitted": false
         }
       ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "videoWrapper",
+        "type": "ContentType",
+        "createdAt": "2024-06-11T09:27:06.718Z",
+        "updatedAt": "2024-06-11T09:27:53.245Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-11T09:27:53.245Z",
+        "firstPublishedAt": "2024-06-11T09:27:07.170Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/content_types/videoWrapper"
+      },
+      "displayField": "internalTitle",
+      "name": "🧩 Video Wrapper",
+      "description": "Videos from several sources.",
+      "fields": [
+        {
+          "id": "internalTitle",
+          "name": "Internal Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "videoSource",
+          "name": "Video Source",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "in": [
+                "Youtube",
+                "Wistia",
+                "Contentful"
+              ]
+            }
+          ],
+          "defaultValue": {
+            "en-US": "Youtube"
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-/]))?$",
+                "flags": null
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "contentfulVideo",
+          "name": "Contentful Video (Optional)",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "video"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
     }
   ],
   "tags": [
@@ -2612,7 +2748,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 3,
         "createdAt": "2024-06-04T12:20:15.684Z",
         "createdBy": {
           "sys": {
@@ -2621,7 +2757,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:15.684Z",
+        "updatedAt": "2024-06-11T12:56:11.288Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -2646,22 +2782,34 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "title"
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "body"
+          "fieldId": "body",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "images"
+          "fieldId": "images",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "actionButtons"
+          "fieldId": "actionButtons",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "backgroundColor"
+          "fieldId": "backgroundColor",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -2676,7 +2824,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 5,
         "createdAt": "2024-06-04T12:20:16.855Z",
         "createdBy": {
           "sys": {
@@ -2685,7 +2833,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:16.855Z",
+        "updatedAt": "2024-06-11T12:57:13.203Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -2710,22 +2858,34 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "image"
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "altText"
+          "fieldId": "altText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "radius"
+          "fieldId": "radius",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "enableZoom"
+          "fieldId": "enableZoom",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "enableBlur"
+          "fieldId": "enableBlur",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -2740,7 +2900,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 3,
         "createdAt": "2024-06-04T12:20:17.809Z",
         "createdBy": {
           "sys": {
@@ -2749,7 +2909,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:17.809Z",
+        "updatedAt": "2024-06-11T12:56:32.967Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -2774,16 +2934,24 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "title"
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "url"
+          "fieldId": "url",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "optionalIcon"
+          "fieldId": "optionalIcon",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -2798,7 +2966,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 3,
         "createdAt": "2024-06-04T12:20:18.757Z",
         "createdBy": {
           "sys": {
@@ -2807,7 +2975,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:18.757Z",
+        "updatedAt": "2024-06-11T12:58:00.601Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -2832,28 +3000,44 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "firstName"
+          "fieldId": "firstName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "lastName"
+          "fieldId": "lastName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "bio"
+          "fieldId": "bio",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "avatar"
+          "fieldId": "avatar",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "website"
+          "fieldId": "website",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "linkedinProfile"
+          "fieldId": "linkedinProfile",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "twitterProfile"
+          "fieldId": "twitterProfile",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -2868,7 +3052,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 3,
         "createdAt": "2024-06-04T12:20:19.714Z",
         "createdBy": {
           "sys": {
@@ -2877,7 +3061,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:19.714Z",
+        "updatedAt": "2024-06-11T12:59:23.428Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -2902,22 +3086,34 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "title"
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "description"
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "ogImage"
+          "fieldId": "ogImage",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "noindex"
+          "fieldId": "noindex",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "nofollow"
+          "fieldId": "nofollow",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -2932,7 +3128,7 @@
             "linkType": "Space"
           }
         },
-        "version": 3,
+        "version": 5,
         "createdAt": "2024-06-04T12:20:20.731Z",
         "createdBy": {
           "sys": {
@@ -2941,7 +3137,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:46:32.397Z",
+        "updatedAt": "2024-06-11T12:58:26.311Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3003,7 +3199,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 3,
         "createdAt": "2024-06-04T12:20:21.700Z",
         "createdBy": {
           "sys": {
@@ -3012,7 +3208,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:21.700Z",
+        "updatedAt": "2024-06-11T12:56:51.014Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3037,22 +3233,34 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "headline"
+          "fieldId": "headline",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "body"
+          "fieldId": "body",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "image"
+          "fieldId": "image",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "variant"
+          "fieldId": "variant",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "actionButtons"
+          "fieldId": "actionButtons",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -3067,7 +3275,7 @@
             "linkType": "Space"
           }
         },
-        "version": 3,
+        "version": 5,
         "createdAt": "2024-06-04T12:20:23.198Z",
         "createdBy": {
           "sys": {
@@ -3076,7 +3284,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-05T10:54:34.889Z",
+        "updatedAt": "2024-06-11T12:55:02.555Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3148,7 +3356,7 @@
             "linkType": "Space"
           }
         },
-        "version": 3,
+        "version": 5,
         "createdAt": "2024-06-04T12:20:24.254Z",
         "createdBy": {
           "sys": {
@@ -3157,7 +3365,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-05T10:38:29.833Z",
+        "updatedAt": "2024-06-11T12:57:35.002Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3384,7 +3592,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 5,
         "createdAt": "2024-06-04T12:20:27.037Z",
         "createdBy": {
           "sys": {
@@ -3393,7 +3601,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:27.037Z",
+        "updatedAt": "2024-06-11T12:58:55.153Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3418,16 +3626,24 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "body"
+          "fieldId": "body",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "images"
+          "fieldId": "images",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "backgroundColor"
+          "fieldId": "backgroundColor",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -3442,7 +3658,7 @@
             "linkType": "Space"
           }
         },
-        "version": 7,
+        "version": 9,
         "createdAt": "2024-06-04T12:20:27.852Z",
         "createdBy": {
           "sys": {
@@ -3451,7 +3667,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:40:22.699Z",
+        "updatedAt": "2024-06-11T13:00:42.733Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3503,7 +3719,7 @@
             "linkType": "Space"
           }
         },
-        "version": 5,
+        "version": 7,
         "createdAt": "2024-06-04T12:20:28.798Z",
         "createdBy": {
           "sys": {
@@ -3512,7 +3728,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:50:48.543Z",
+        "updatedAt": "2024-06-11T09:56:06.240Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3681,7 +3897,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 3,
         "createdAt": "2024-06-04T12:20:30.727Z",
         "createdBy": {
           "sys": {
@@ -3690,7 +3906,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:30.727Z",
+        "updatedAt": "2024-06-11T13:00:20.728Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3715,13 +3931,95 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "codeBlock"
+          "fieldId": "codeBlock",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "language"
+          "fieldId": "language",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "g0i9oz7yd4nm",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2024-06-11T09:27:07.413Z",
+        "createdBy": {
+          "sys": {
+            "id": "0LxJB4LBv007oHgJD7WvJN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-06-11T09:27:53.913Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0LxJB4LBv007oHgJD7WvJN",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "videoWrapper",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "videoSource",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contentfulVideo",
+          "settings": {
+            "helpText": "If you select \"Contentful\" as source, you must add the video to this field.",
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": true
+          },
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
         }
       ]
     }
@@ -8545,7 +8843,7 @@
         "id": "5VKkrSFmChA2qT50JfggUG",
         "type": "Entry",
         "createdAt": "2024-06-04T12:21:07.574Z",
-        "updatedAt": "2024-06-06T11:49:39.402Z",
+        "updatedAt": "2024-06-11T12:51:40.166Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -8553,8 +8851,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2024-06-04T12:21:52.445Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-11T12:51:40.166Z",
         "firstPublishedAt": "2024-06-04T12:21:52.445Z",
         "createdBy": {
           "sys": {
@@ -8570,8 +8868,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -8583,7 +8881,7 @@
         ],
         "fieldStatus": {
           "*": {
-            "en-US": "changed"
+            "en-US": "published"
           }
         },
         "contentType": {
@@ -10024,7 +10322,7 @@
         "id": "6lV0vHfYJE0FZACQQWsaPm",
         "type": "Entry",
         "createdAt": "2024-06-04T12:40:53.372Z",
-        "updatedAt": "2024-06-06T10:41:26.085Z",
+        "updatedAt": "2024-06-11T12:51:24.831Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -10032,8 +10330,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 15,
-        "publishedAt": "2024-06-06T10:41:26.085Z",
+        "publishedVersion": 26,
+        "publishedAt": "2024-06-11T12:51:24.831Z",
         "firstPublishedAt": "2024-06-04T12:52:25.254Z",
         "createdBy": {
           "sys": {
@@ -10049,8 +10347,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 3,
-        "version": 16,
+        "publishedCounter": 4,
+        "version": 27,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -10140,143 +10438,203 @@
         },
         "body": {
           "en-US": {
+            "nodeType": "document",
             "data": {
             },
             "content": [
               {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "A Continent Steeped in Rainmaking Traditions",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "nodeType": "text",
                     "value": "Across Africa, a rich tapestry of rainmaking rituals has been woven. In Mali, the Dogon people perform elaborate dances to appease the ancestors believed to control the rains. Ethiopian Orthodox priests conduct blessings, while Maasai warriors in Kenya offer sacrifices to their deity, Enkai. These practices, passed down through generations, reflect a deep connection to nature and a profound belief in the power of human intervention.",
-                    "nodeType": "text"
+                    "marks": [
+                    ],
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "Science Takes the Stage: Cloud Seeding and the Quest for Rain",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
+                    "nodeType": "text",
                     "value": "As scientific understanding grew, so did the search for more pragmatic solutions. Cloud seeding, a technique where airborne particles are introduced into clouds to trigger precipitation, emerged as a potential answer. Countries like South Africa and Morocco have experimented with cloud seeding with varying degrees of success. While the science is still evolving, it offers a glimpse into a future where rainmaking becomes a more technical endeavor.",
-                    "nodeType": "text"
+                    "marks": [
+                    ],
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "The Enduring Power of Hope and Tradition",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Despite the rise of cloud seeding, traditional rainmaking rituals haven't vanished. They continue to hold a powerful cultural significance, serving as a source of hope and a way to connect with the land and its spirits. In a world increasingly focused on technology, these practices remind us of the enduring power of human belief and the deep connection between humanity and nature.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
                     "marks": [
                       {
                         "type": "bold"
                       }
                     ],
-                    "value": "The Future of Rain in Africa",
-                    "nodeType": "text"
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "data": {
-                    },
+                    "nodeType": "text",
+                    "value": "Despite the rise of cloud seeding, traditional rainmaking rituals haven't vanished. They continue to hold a powerful cultural significance, serving as a source of hope and a way to connect with the land and its spirits. In a world increasingly focused on technology, these practices remind us of the enduring power of human belief and the deep connection between humanity and nature.",
                     "marks": [
                     ],
-                    "value": "As climate change casts a long shadow, the quest for reliable rainfall intensifies. Whether through age-old rituals, innovative technology, or a blend of both, Africa's fight for life-giving rain continues. This captivating story is a testament to human ingenuity, our dependence on the natural world, and the enduring hope for a future where the skies deliver their precious bounty.",
-                    "nodeType": "text"
+                    "data": {
+                    }
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "The Future of Rain in Africa",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "As climate change casts a long shadow, the quest for reliable rainfall intensifies. Whether through age-old rituals, innovative technology, or a blend of both, Africa's fight for life-giving rain continues. This captivating story is a testament to human ingenuity, our dependence on the natural world, and the enduring hope for a future where the skies deliver their precious bounty.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
               }
-            ],
-            "nodeType": "document"
+            ]
           }
         },
         "seoMetadata": {
@@ -12139,6 +12497,1201 @@
           }
         }
       }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "6b7SRrm3JLfpbewxrljALd",
+        "type": "Entry",
+        "createdAt": "2024-06-11T09:27:17.076Z",
+        "updatedAt": "2024-06-11T09:29:27.895Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-11T09:29:27.895Z",
+        "firstPublishedAt": "2024-06-11T09:29:27.895Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "videoWrapper"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/6b7SRrm3JLfpbewxrljALd"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "[Product Demo] An inside look at Contentful Studio with Kalvin Brite"
+        },
+        "title": {
+          "en-US": "[Product Demo] An inside look at Contentful Studio with Kalvin Brite"
+        },
+        "videoSource": {
+          "en-US": "Youtube"
+        },
+        "url": {
+          "en-US": "https://youtu.be/_iudPvcEi6M?si=jk6uKV1psWnj4d-W"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "fXNypZ8HEHGnPi7yDQdWc",
+        "type": "Entry",
+        "createdAt": "2024-06-11T09:53:36.838Z",
+        "updatedAt": "2024-06-11T09:54:56.997Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2024-06-11T09:54:56.997Z",
+        "firstPublishedAt": "2024-06-11T09:54:56.997Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "videoWrapper"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/fXNypZ8HEHGnPi7yDQdWc"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Video / Intro - Setting Up Personal Website With Contentful "
+        },
+        "title": {
+          "en-US": "Intro - Setting Up Personal Website With Contentful "
+        },
+        "videoSource": {
+          "en-US": "Contentful"
+        },
+        "contentfulVideo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ULlnA9Un91m1JKb57BRlS"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "yhra0tjOSmnERUstIx202",
+        "type": "Entry",
+        "createdAt": "2024-06-11T10:50:07.022Z",
+        "updatedAt": "2024-06-11T12:49:13.123Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 52,
+        "publishedAt": "2024-06-11T12:49:13.123Z",
+        "firstPublishedAt": "2024-06-11T11:04:38.995Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 53,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/yhra0tjOSmnERUstIx202"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Blog / Example / How to Add Video to a Blog Post in Contentful"
+        },
+        "title": {
+          "en-US": "How to Add Video to a Blog Post in Contentful"
+        },
+        "slug": {
+          "en-US": "how-to-add-video-to-a-blog-post-in-contentful"
+        },
+        "featuredImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "15uADnbgU56RSjz3mFr8ks"
+            }
+          }
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2V5tRYwzZIvtMwu5ggA115"
+            }
+          }
+        },
+        "category": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6sZ0JzoDaAaojRxZ75n3H8"
+            }
+          }
+        },
+        "publishedDate": {
+          "en-US": "2024-06-12T00:00+02:00"
+        },
+        "summary": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Integrating videos into your blog posts can significantly enhance the engagement and user experience of your content. Contentful, a powerful headless CMS, provides a flexible way to manage your content and effortlessly add videos to your blog posts. In this blog post, we will guide you through the process of embedding videos in your blog posts using Contentful. ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "2V5tRYwzZIvtMwu5ggA115",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                    ],
+                    "nodeType": "embedded-entry-inline"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Adding Videos to Your Posts",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Want to add videos to your blog posts? You can do that easily using the  ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "embedded-entry-inline",
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "1Xp2L1ZCyvmNq0IHR9rcig",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " content type. It lets you choose from three video sources:",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "YouTube:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": " Enter the URL of the YouTube video you want to embed.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Wistia:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": " If you have a Wistia account,",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": " provide the URL of your Wistia video.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Contentful:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": " If your video is uploaded to your Contentful space,",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": " select \"Contentful\" as the source and choose the specific video asset.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Examples:",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "unordered-list",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Adding a video from Contentful:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": " Here's how to add a video stored in your Contentful space using the Video Wrapper.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "embedded-entry-block",
+                        "data": {
+                          "target": {
+                            "sys": {
+                              "id": "fXNypZ8HEHGnPi7yDQdWc",
+                              "type": "Link",
+                              "linkType": "Entry"
+                            }
+                          }
+                        },
+                        "content": [
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Adding a YouTube video:\n",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {
+                            }
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": "Here's how to embed a YouTube video using the Video Wrapper.",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "nodeType": "embedded-entry-block",
+                        "data": {
+                          "target": {
+                            "sys": {
+                              "id": "6b7SRrm3JLfpbewxrljALd",
+                              "type": "Link",
+                              "linkType": "Entry"
+                            }
+                          }
+                        },
+                        "content": [
+                        ]
+                      },
+                      {
+                        "nodeType": "paragraph",
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "",
+                            "marks": [
+                            ],
+                            "data": {
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "seoMetadata": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5RjMqb5KQBTA5dWcXvmmQV"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "15uADnbgU56RSjz3mFr8ks",
+        "type": "Entry",
+        "createdAt": "2024-06-11T10:51:09.270Z",
+        "updatedAt": "2024-06-11T10:51:50.123Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-06-11T10:51:50.123Z",
+        "firstPublishedAt": "2024-06-11T10:51:50.123Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pexelsImageWrapper"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/15uADnbgU56RSjz3mFr8ks"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Pexels / Close-up of Woman Using Mobile Phone at Night | Photo by Bruno Cervera on Pexels"
+        },
+        "pexelsImage": {
+          "en-US": {
+            "photographer": "Bruno Cervera",
+            "photographer_url": "https://www.pexels.com/@brunocervera",
+            "image": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg?auto=compress&cs=tinysrgb&h=350",
+            "src": {
+              "original": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg",
+              "large2x": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/318540/pexels-photo-318540.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "alt": "Close-up of Woman Using Mobile Phone at Night",
+            "avg_color": "#42372B",
+            "width": 6000,
+            "height": 4000,
+            "url": "https://www.pexels.com/photo/close-up-of-woman-using-mobile-phone-at-night-318540/",
+            "attribution": "Photos provided by Pexels",
+            "photographer_attribution": "Photo by Bruno Cervera on Pexels"
+          }
+        },
+        "radius": {
+          "en-US": "None"
+        },
+        "enableZoom": {
+          "en-US": false
+        },
+        "enableBlur": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "6sZ0JzoDaAaojRxZ75n3H8",
+        "type": "Entry",
+        "createdAt": "2024-06-11T10:52:36.992Z",
+        "updatedAt": "2024-06-11T10:57:08.911Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-06-11T10:57:08.911Z",
+        "firstPublishedAt": "2024-06-11T10:57:08.911Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "categoryPage"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/6sZ0JzoDaAaojRxZ75n3H8"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Category / Contentful"
+        },
+        "title": {
+          "en-US": "Contentful"
+        },
+        "slug": {
+          "en-US": "contentful"
+        },
+        "seoMetadata": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5RjMqb5KQBTA5dWcXvmmQV"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "5RjMqb5KQBTA5dWcXvmmQV",
+        "type": "Entry",
+        "createdAt": "2024-06-11T10:52:56.282Z",
+        "updatedAt": "2024-06-11T10:57:03.208Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2024-06-11T10:57:03.208Z",
+        "firstPublishedAt": "2024-06-11T10:57:03.208Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "seo"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/5RjMqb5KQBTA5dWcXvmmQV"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "SEO / Contentful"
+        },
+        "title": {
+          "en-US": "CHIGORIDDIM | Contentful is a powerful composable content platform"
+        },
+        "description": {
+          "en-US": "Contentful is a powerful composable content platform"
+        },
+        "ogImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1G2zgevOQ41xQzkAVmUmwA"
+            }
+          }
+        },
+        "noindex": {
+          "en-US": false
+        },
+        "nofollow": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "1G2zgevOQ41xQzkAVmUmwA",
+        "type": "Entry",
+        "createdAt": "2024-06-11T10:53:58.597Z",
+        "updatedAt": "2024-06-11T10:56:57.989Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2024-06-11T10:56:57.989Z",
+        "firstPublishedAt": "2024-06-11T10:56:19.675Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "imageWrapper"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/1G2zgevOQ41xQzkAVmUmwA"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Wrapper / Contentful Logo"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7mmiiOzmzUzkTiPf1O7EYV"
+            }
+          }
+        },
+        "altText": {
+          "en-US": "Contentful Logo"
+        },
+        "radius": {
+          "en-US": "None"
+        },
+        "enableZoom": {
+          "en-US": false
+        },
+        "enableBlur": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "1Xp2L1ZCyvmNq0IHR9rcig",
+        "type": "Entry",
+        "createdAt": "2024-06-11T11:53:26.715Z",
+        "updatedAt": "2024-06-11T11:54:17.790Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-06-11T11:54:17.790Z",
+        "firstPublishedAt": "2024-06-11T11:54:17.790Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "topicDefinition"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/1Xp2L1ZCyvmNq0IHR9rcig"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Definition / Video Wrapper"
+        },
+        "topic": {
+          "en-US": "Video Wrapper"
+        },
+        "definition": {
+          "en-US": "A content type in the context of this project used to hold videos from various sources."
+        }
+      }
     }
   ],
   "assets": [
@@ -12513,6 +14066,149 @@
             },
             "fileName": "Tiger_in_Peaky_Blinders_Style",
             "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "ULlnA9Un91m1JKb57BRlS",
+        "type": "Asset",
+        "createdAt": "2024-06-11T09:29:39.802Z",
+        "updatedAt": "2024-06-11T09:53:19.355Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-06-11T09:53:19.355Z",
+        "firstPublishedAt": "2024-06-11T09:53:19.355Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/assets/ULlnA9Un91m1JKb57BRlS"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Introduction Video"
+        },
+        "file": {
+          "en-US": {
+            "url": "//videos.ctfassets.net/g0i9oz7yd4nm/ULlnA9Un91m1JKb57BRlS/17c3fd1ec3a424feffaae42e85c82e7b/Personal_website_with_Contentful_Intro_video.mp4",
+            "details": {
+              "size": 10694812
+            },
+            "fileName": "Personal website with Contentful Intro video.mp4",
+            "contentType": "video/mp4"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "7mmiiOzmzUzkTiPf1O7EYV",
+        "type": "Asset",
+        "createdAt": "2024-06-11T10:54:02.409Z",
+        "updatedAt": "2024-06-11T10:56:03.830Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-11T10:56:03.830Z",
+        "firstPublishedAt": "2024-06-11T10:55:52.870Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/assets/7mmiiOzmzUzkTiPf1O7EYV"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Contentful Logo"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/g0i9oz7yd4nm/7mmiiOzmzUzkTiPf1O7EYV/823e228637055343d8f33567e45107d6/image.png",
+            "details": {
+              "size": 9392,
+              "image": {
+                "width": 300,
+                "height": 64
+              }
+            },
+            "fileName": "image.png",
+            "contentType": "image/png"
           }
         }
       }

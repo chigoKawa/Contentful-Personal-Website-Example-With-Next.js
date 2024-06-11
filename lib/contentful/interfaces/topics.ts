@@ -26,6 +26,21 @@ export interface IImageWrapper extends Entry {
   };
 }
 
+export interface IVideoWrapper extends Entry {
+  fields: {
+    internalTitle: EntryFields.Symbol;
+    title?: EntryFields.Symbol;
+    url?: EntryFields.Symbol;
+    contentfulVideo?: Asset;
+    // enableZoom?: EntryFields.Boolean;
+    // enableBlur?: EntryFields.Boolean;
+    videoSource: EntryFields.Symbol<  "Youtube"|
+    "Wistia"|
+    "Contentful" >;
+  };
+}
+
+
 export interface ISeo extends Entry {
   fields: {
     internalTitle: EntryFields.Symbol;

@@ -106,9 +106,10 @@ const generateOptions = (props = {}) => {
       // [INLINES.ENTRY_HYPERLINK]: (node: any, children: any) => (
       //   <EntryHYPERLINK node={node}>{children}</EntryHYPERLINK>
       // ),
-      // [INLINES.EMBEDDED_ENTRY]: (node: any, children: any) => (
-      //   <InlineEmbed node={node} items={children} />
-      // ),
+      [INLINES.EMBEDDED_ENTRY]: (node: any, children: any) => (
+
+        <InlineEmbed node={node} items={children} props={props} />
+      ),
     },
 
     // renderText: (text: string) => text.replace("!", "?"),

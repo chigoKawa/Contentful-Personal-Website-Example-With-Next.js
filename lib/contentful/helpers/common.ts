@@ -209,3 +209,13 @@ export const transformTimestamp = (timestamp: string) => {
   return formatDistanceToNow(new Date(timestamp), { addSuffix: true });
 };
 
+export function extractYouTubeVideoID(url : string) {
+  // const regex = /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?/ ]{11})/;
+  // const match = url.match(regex);
+  // return match ? match[1] : null;
+
+  const regex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?/ ]{11})/;
+  const match = url.match(regex);
+  return match ? match[1] : null;
+}
+

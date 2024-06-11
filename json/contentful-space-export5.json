@@ -1418,7 +1418,7 @@
         "id": "navigationMenu",
         "type": "ContentType",
         "createdAt": "2024-06-04T12:20:24.716Z",
-        "updatedAt": "2024-06-04T12:20:25.054Z",
+        "updatedAt": "2024-06-06T11:26:32.831Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1426,8 +1426,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-04T12:20:25.054Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-06T11:26:32.831Z",
         "firstPublishedAt": "2024-06-04T12:20:25.054Z",
         "createdBy": {
           "sys": {
@@ -1443,8 +1443,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1456,7 +1456,7 @@
       },
       "displayField": "internalTitle",
       "name": "🧭 Navigation Menu",
-      "description": null,
+      "description": "This is a singleton for navigation and application settings. Ensure that only one entry of this content type exists. Multiple entries can lead to inconsistencies and potential issues.",
       "fields": [
         {
           "id": "internalTitle",
@@ -1620,6 +1620,17 @@
         {
           "id": "themes",
           "name": "Themes",
+          "type": "Object",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "appSettings",
+          "name": "App Settings",
           "type": "Object",
           "localized": false,
           "required": false,
@@ -3216,7 +3227,7 @@
             "linkType": "Space"
           }
         },
-        "version": 1,
+        "version": 5,
         "createdAt": "2024-06-04T12:20:25.339Z",
         "createdBy": {
           "sys": {
@@ -3225,7 +3236,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-04T12:20:25.339Z",
+        "updatedAt": "2024-06-06T11:26:33.417Z",
         "updatedBy": {
           "sys": {
             "id": "0LxJB4LBv007oHgJD7WvJN",
@@ -3250,31 +3261,57 @@
       },
       "controls": [
         {
-          "fieldId": "internalTitle"
+          "fieldId": "internalTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "title"
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "siteName"
+          "fieldId": "siteName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "siteLogo"
+          "fieldId": "siteLogo",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "content"
+          "fieldId": "content",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "socialLinks"
+          "fieldId": "socialLinks",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "footerSections"
+          "fieldId": "footerSections",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "font"
+          "fieldId": "font",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "themes"
+          "fieldId": "themes",
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "appSettings",
+          "settings": {
+            "helpText": "App settings managed by a Contentful app. TBD"
+          },
+          "widgetId": "objectEditor",
+          "widgetNamespace": "builtin"
         }
       ]
     },
@@ -3987,7 +4024,7 @@
         "id": "1WcOXsT4ygBXV6kPKZuHEU",
         "type": "Entry",
         "createdAt": "2024-06-04T12:20:50.525Z",
-        "updatedAt": "2024-06-05T10:41:45.755Z",
+        "updatedAt": "2024-06-06T12:41:05.954Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3995,8 +4032,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2024-06-04T12:21:16.799Z",
+        "publishedVersion": 6,
+        "publishedAt": "2024-06-06T12:41:05.954Z",
         "firstPublishedAt": "2024-06-04T12:21:16.799Z",
         "createdBy": {
           "sys": {
@@ -4012,8 +4049,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 3,
+        "version": 7,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -4025,7 +4062,7 @@
         ],
         "fieldStatus": {
           "*": {
-            "en-US": "changed"
+            "en-US": "published"
           }
         },
         "contentType": {
@@ -4325,7 +4362,7 @@
         "id": "1RtQoR5mmhYWhps9I6C8yD",
         "type": "Entry",
         "createdAt": "2024-06-04T12:20:51.951Z",
-        "updatedAt": "2024-06-04T12:21:19.549Z",
+        "updatedAt": "2024-06-06T12:41:05.631Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -4333,8 +4370,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2024-06-04T12:21:19.549Z",
+        "publishedVersion": 9,
+        "publishedAt": "2024-06-06T12:41:05.631Z",
         "firstPublishedAt": "2024-06-04T12:21:19.549Z",
         "createdBy": {
           "sys": {
@@ -4350,8 +4387,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -4377,7 +4414,7 @@
       },
       "fields": {
         "internalTitle": {
-          "en-US": "CTA / I post tweets about music"
+          "en-US": "CTA / Explore this CTA with photos"
         },
         "title": {
           "en-US": "Explore this CTA with photos"
@@ -4429,7 +4466,7 @@
           ]
         },
         "backgroundColor": {
-          "en-US": "Primary"
+          "en-US": "Secondary"
         }
       }
     },
@@ -5063,7 +5100,7 @@
         "id": "1mjBWa0Bc6xfUBBs2Wg3Tr",
         "type": "Entry",
         "createdAt": "2024-06-04T12:20:55.636Z",
-        "updatedAt": "2024-06-04T12:21:25.354Z",
+        "updatedAt": "2024-06-06T11:12:57.101Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -5071,8 +5108,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2024-06-04T12:21:25.354Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-06T11:12:57.101Z",
         "firstPublishedAt": "2024-06-04T12:21:25.354Z",
         "createdBy": {
           "sys": {
@@ -5088,8 +5125,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -5146,6 +5183,13 @@
                 "type": "Link",
                 "linkType": "Entry",
                 "id": "2Ls0h2XYeKDsXqwy7H3eRx"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5FLsEGbb5gbbO5yy97laY9"
               }
             },
             {
@@ -6503,7 +6547,7 @@
         "id": "7yS4e4cyP5IvMzUpnJuv65",
         "type": "Entry",
         "createdAt": "2024-06-04T12:21:00.142Z",
-        "updatedAt": "2024-06-04T12:21:36.176Z",
+        "updatedAt": "2024-06-06T12:41:05.740Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -6511,8 +6555,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2024-06-04T12:21:36.176Z",
+        "publishedVersion": 4,
+        "publishedAt": "2024-06-06T12:41:05.740Z",
         "firstPublishedAt": "2024-06-04T12:21:36.176Z",
         "createdBy": {
           "sys": {
@@ -6528,8 +6572,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 5,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -6555,7 +6599,7 @@
       },
       "fields": {
         "internalTitle": {
-          "en-US": "CTA / I post tweets about music (1)"
+          "en-US": "CTA / The Universal Language of Life"
         },
         "title": {
           "en-US": "The Universal Language of Life"
@@ -8501,7 +8545,7 @@
         "id": "5VKkrSFmChA2qT50JfggUG",
         "type": "Entry",
         "createdAt": "2024-06-04T12:21:07.574Z",
-        "updatedAt": "2024-06-04T12:21:52.445Z",
+        "updatedAt": "2024-06-06T11:49:39.402Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -8527,7 +8571,7 @@
           }
         },
         "publishedCounter": 1,
-        "version": 3,
+        "version": 5,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -8539,7 +8583,7 @@
         ],
         "fieldStatus": {
           "*": {
-            "en-US": "published"
+            "en-US": "changed"
           }
         },
         "contentType": {
@@ -8557,52 +8601,50 @@
         },
         "body": {
           "en-US": {
-            "nodeType": "document",
             "data": {
             },
             "content": [
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
-                    "value": "Hello",
+                    "data": {
+                    },
                     "marks": [
                       {
                         "type": "bold"
                       }
                     ],
-                    "data": {
-                    }
+                    "value": "Hello",
+                    "nodeType": "text"
                   },
                   {
-                    "nodeType": "text",
-                    "value": "! I'm [Your Name], a passionate tech enthusiast with a deep love for exploring the latest advancements in technology. My journey in the tech world began at a young age, and over the years, I've developed a keen interest in various aspects of technology, including software development, hardware innovation, and emerging tech trends.",
+                    "data": {
+                    },
                     "marks": [
                     ],
-                    "data": {
-                    }
+                    "value": "! I'm [Your Name], a passionate tech enthusiast with a deep love for exploring the latest advancements in technology. My journey in the tech world began at a young age, and over the years, I've developed a keen interest in various aspects of technology, including software development, hardware innovation, and emerging tech trends.",
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               },
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
-                    "value": "I thrive on solving ",
+                    "data": {
+                    },
                     "marks": [
                     ],
-                    "data": {
-                    }
+                    "value": "I thrive on solving ",
+                    "nodeType": "text"
                   },
                   {
-                    "nodeType": "text",
-                    "value": "complex problems",
+                    "data": {
+                    },
                     "marks": [
                       {
                         "type": "bold"
@@ -8611,51 +8653,51 @@
                         "type": "italic"
                       }
                     ],
-                    "data": {
-                    }
+                    "value": "complex problems",
+                    "nodeType": "text"
                   },
                   {
-                    "nodeType": "text",
+                    "data": {
+                    },
+                    "marks": [
+                    ],
                     "value": " and enjoy staying updated with the latest tech news and developments. Whether it's coding a new application, building a custom PC, or experimenting with new technologies, I'm always eager to learn and grow.",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               },
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
+                    "data": {
+                    },
+                    "marks": [
+                    ],
                     "value": "In my professional career, I've worked on diverse projects that span different domains, from web development to AI and machine learning. I believe in the power of technology to transform lives and am committed to leveraging my skills to create innovative solutions that make a difference.",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               },
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
-                    "value": "When I'm not immersed in the world of tech, you can find me sharing my knowledge through blogging, speaking at tech events, or collaborating with fellow tech enthusiasts on exciting projects. I'm also an avid gamer and enjoy exploring the latest in gaming technology.",
+                    "data": {
+                    },
                     "marks": [
                     ],
-                    "data": {
-                    }
+                    "value": "When I'm not immersed in the world of tech, you can find me sharing my knowledge through blogging, speaking at tech events, or collaborating with fellow tech enthusiasts on exciting projects. I'm also an avid gamer and enjoy exploring the latest in gaming technology.",
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               },
               {
-                "nodeType": "embedded-entry-block",
                 "data": {
                   "target": {
                     "sys": {
@@ -8666,24 +8708,26 @@
                   }
                 },
                 "content": [
-                ]
+                ],
+                "nodeType": "embedded-entry-block"
               },
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
-                    "value": "",
+                    "data": {
+                    },
                     "marks": [
                     ],
-                    "data": {
-                    }
+                    "value": "",
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               }
-            ]
+            ],
+            "nodeType": "document"
           }
         },
         "backgroundColor": {
@@ -9980,7 +10024,7 @@
         "id": "6lV0vHfYJE0FZACQQWsaPm",
         "type": "Entry",
         "createdAt": "2024-06-04T12:40:53.372Z",
-        "updatedAt": "2024-06-04T12:52:25.254Z",
+        "updatedAt": "2024-06-06T10:41:26.085Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -9988,8 +10032,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 11,
-        "publishedAt": "2024-06-04T12:52:25.254Z",
+        "publishedVersion": 15,
+        "publishedAt": "2024-06-06T10:41:26.085Z",
         "firstPublishedAt": "2024-06-04T12:52:25.254Z",
         "createdBy": {
           "sys": {
@@ -10005,8 +10049,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 12,
+        "publishedCounter": 3,
+        "version": 16,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -10045,7 +10089,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Entry",
-              "id": "2zrGTocBZZ1lXDi3pxOZhZ"
+              "id": "3iKa1kurcubigGnxSSsUjN"
             }
           }
         },
@@ -10066,6 +10110,9 @@
               "id": "3026tR2IkcGrXMu14YvlVl"
             }
           }
+        },
+        "publishedDate": {
+          "en-US": "2024-06-08T00:00+02:00"
         },
         "summary": {
           "en-US": {
@@ -10368,7 +10415,7 @@
         "id": "2V5tRYwzZIvtMwu5ggA115",
         "type": "Entry",
         "createdAt": "2024-06-04T12:47:03.905Z",
-        "updatedAt": "2024-06-04T12:48:12.142Z",
+        "updatedAt": "2024-06-06T11:01:22.104Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -10376,8 +10423,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 6,
-        "publishedAt": "2024-06-04T12:48:12.142Z",
+        "publishedVersion": 8,
+        "publishedAt": "2024-06-06T11:01:22.104Z",
         "firstPublishedAt": "2024-06-04T12:48:12.142Z",
         "createdBy": {
           "sys": {
@@ -10393,8 +10440,8 @@
             "id": "0LxJB4LBv007oHgJD7WvJN"
           }
         },
-        "publishedCounter": 1,
-        "version": 7,
+        "publishedCounter": 2,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -10434,6 +10481,15 @@
               "type": "Link",
               "linkType": "Asset",
               "id": "1U1Ex8hrtU5V1AYonq26zh"
+            }
+          }
+        },
+        "website": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5IVrSVc5rqQaQCsodPYh11"
             }
           }
         }
@@ -10822,6 +10878,1265 @@
         },
         "nofollow": {
           "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "1CDEkfLTCvQuwlAxo5kTza",
+        "type": "Entry",
+        "createdAt": "2024-06-05T14:38:05.582Z",
+        "updatedAt": "2024-06-06T10:41:19.299Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-06-06T10:41:19.299Z",
+        "firstPublishedAt": "2024-06-05T14:38:49.511Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/1CDEkfLTCvQuwlAxo5kTza"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Blog / When the Skies Run Dry: Rain, Rituals, and Rainmaking in Africa (1)"
+        },
+        "title": {
+          "en-US": "When the Skies Run Dry: Rain, Rituals, and Rainmaking in Africa2"
+        },
+        "slug": {
+          "en-US": "when-the-skies-run-dry-rain-rituals-and-rainmaking-in-africa-2"
+        },
+        "featuredImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3tV04sBUTVHzpSBt8lmlZW"
+            }
+          }
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2V5tRYwzZIvtMwu5ggA115"
+            }
+          }
+        },
+        "category": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3026tR2IkcGrXMu14YvlVl"
+            }
+          }
+        },
+        "publishedDate": {
+          "en-US": "2024-06-03T00:00+02:00"
+        },
+        "summary": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The lifeblood of Africa, rain, can be a fickle friend. Droughts grip the land, leaving parched fields and desperate communities. But throughout history, Africans haven't simply waited for the skies to open. From age-old rituals to modern science, a fascinating dance with rain has unfolded. Let's delve into the heart of African rainmaking, exploring traditional practices, the rise of cloud seeding, and the enduring hope for a life-giving downpour.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "A Continent Steeped in Rainmaking Traditions",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Across Africa, a rich tapestry of rainmaking rituals has been woven. In Mali, the Dogon people perform elaborate dances to appease the ancestors believed to control the rains. Ethiopian Orthodox priests conduct blessings, while Maasai warriors in Kenya offer sacrifices to their deity, Enkai. These practices, passed down through generations, reflect a deep connection to nature and a profound belief in the power of human intervention.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Science Takes the Stage: Cloud Seeding and the Quest for Rain",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "As scientific understanding grew, so did the search for more pragmatic solutions. Cloud seeding, a technique where airborne particles are introduced into clouds to trigger precipitation, emerged as a potential answer. Countries like South Africa and Morocco have experimented with cloud seeding with varying degrees of success. While the science is still evolving, it offers a glimpse into a future where rainmaking becomes a more technical endeavor.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "The Enduring Power of Hope and Tradition",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Despite the rise of cloud seeding, traditional rainmaking rituals haven't vanished. They continue to hold a powerful cultural significance, serving as a source of hope and a way to connect with the land and its spirits. In a world increasingly focused on technology, these practices remind us of the enduring power of human belief and the deep connection between humanity and nature.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "The Future of Rain in Africa",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "As climate change casts a long shadow, the quest for reliable rainfall intensifies. Whether through age-old rituals, innovative technology, or a blend of both, Africa's fight for life-giving rain continues. This captivating story is a testament to human ingenuity, our dependence on the natural world, and the enduring hope for a future where the skies deliver their precious bounty.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "seoMetadata": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "27e8SilCY8SPSz0O8IkuWR"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "3ZkyRQMyeCZb6O0SGO3bQ7",
+        "type": "Entry",
+        "createdAt": "2024-06-05T14:38:21.906Z",
+        "updatedAt": "2024-06-05T17:46:03.629Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-05T17:46:03.629Z",
+        "firstPublishedAt": "2024-06-05T14:38:40.858Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/3ZkyRQMyeCZb6O0SGO3bQ7"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Blog / When the Skies Run Dry: Rain, Rituals, and Rainmaking in Africa (2)"
+        },
+        "title": {
+          "en-US": "When the Skies Run Dry: Rain, Rituals, and Rainmaking in Africa3"
+        },
+        "slug": {
+          "en-US": "when-the-skies-run-dry-rain-rituals-and-rainmaking-in-africa-3"
+        },
+        "featuredImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2zrGTocBZZ1lXDi3pxOZhZ"
+            }
+          }
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2V5tRYwzZIvtMwu5ggA115"
+            }
+          }
+        },
+        "category": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3026tR2IkcGrXMu14YvlVl"
+            }
+          }
+        },
+        "publishedDate": {
+          "en-US": "2024-06-05T00:00+02:00"
+        },
+        "summary": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The lifeblood of Africa, rain, can be a fickle friend. Droughts grip the land, leaving parched fields and desperate communities. But throughout history, Africans haven't simply waited for the skies to open. From age-old rituals to modern science, a fascinating dance with rain has unfolded. Let's delve into the heart of African rainmaking, exploring traditional practices, the rise of cloud seeding, and the enduring hope for a life-giving downpour.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "A Continent Steeped in Rainmaking Traditions",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Across Africa, a rich tapestry of rainmaking rituals has been woven. In Mali, the Dogon people perform elaborate dances to appease the ancestors believed to control the rains. Ethiopian Orthodox priests conduct blessings, while Maasai warriors in Kenya offer sacrifices to their deity, Enkai. These practices, passed down through generations, reflect a deep connection to nature and a profound belief in the power of human intervention.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Science Takes the Stage: Cloud Seeding and the Quest for Rain",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "As scientific understanding grew, so did the search for more pragmatic solutions. Cloud seeding, a technique where airborne particles are introduced into clouds to trigger precipitation, emerged as a potential answer. Countries like South Africa and Morocco have experimented with cloud seeding with varying degrees of success. While the science is still evolving, it offers a glimpse into a future where rainmaking becomes a more technical endeavor.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "The Enduring Power of Hope and Tradition",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Despite the rise of cloud seeding, traditional rainmaking rituals haven't vanished. They continue to hold a powerful cultural significance, serving as a source of hope and a way to connect with the land and its spirits. In a world increasingly focused on technology, these practices remind us of the enduring power of human belief and the deep connection between humanity and nature.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "The Future of Rain in Africa",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "As climate change casts a long shadow, the quest for reliable rainfall intensifies. Whether through age-old rituals, innovative technology, or a blend of both, Africa's fight for life-giving rain continues. This captivating story is a testament to human ingenuity, our dependence on the natural world, and the enduring hope for a future where the skies deliver their precious bounty.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "seoMetadata": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "27e8SilCY8SPSz0O8IkuWR"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "2XcI5a8CtjYgkSmGE2HUpe",
+        "type": "Entry",
+        "createdAt": "2024-06-05T17:55:47.019Z",
+        "updatedAt": "2024-06-06T11:48:18.821Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-06-06T11:48:18.821Z",
+        "firstPublishedAt": "2024-06-05T17:57:47.206Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "landingPage"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/2XcI5a8CtjYgkSmGE2HUpe"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Page / Blog"
+        },
+        "title": {
+          "en-US": "Blog"
+        },
+        "slug": {
+          "en-US": "blog"
+        },
+        "heroBanner": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3v1LfqYsdyMoaynYRKPLmU"
+            }
+          }
+        },
+        "content": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5VKkrSFmChA2qT50JfggUG"
+              }
+            }
+          ]
+        },
+        "seoMetadata": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "27e8SilCY8SPSz0O8IkuWR"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "3v1LfqYsdyMoaynYRKPLmU",
+        "type": "Entry",
+        "createdAt": "2024-06-05T17:56:19.223Z",
+        "updatedAt": "2024-06-06T11:48:18.734Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2024-06-06T11:48:18.734Z",
+        "firstPublishedAt": "2024-06-05T17:57:16.089Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "heroBanner"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/3v1LfqYsdyMoaynYRKPLmU"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Hero / Blog Page"
+        },
+        "headline": {
+          "en-US": [
+            "My",
+            "Blog"
+          ]
+        },
+        "body": {
+          "en-US": "Explore my blogs"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "357gwzlE6t16P0zH3jzH0c"
+            }
+          }
+        },
+        "variant": {
+          "en-US": "With Background Image"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "357gwzlE6t16P0zH3jzH0c",
+        "type": "Entry",
+        "createdAt": "2024-06-05T17:56:52.752Z",
+        "updatedAt": "2024-06-05T17:57:11.164Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-06-05T17:57:11.164Z",
+        "firstPublishedAt": "2024-06-05T17:57:11.164Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pexelsImageWrapper"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/357gwzlE6t16P0zH3jzH0c"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Pexels / Woman in White Long Sleeved Shirt Holding a Pen Writing on a Paper | Photo by energepic.com on Pexels"
+        },
+        "pexelsImage": {
+          "en-US": {
+            "photographer": "energepic.com",
+            "photographer_url": "https://www.pexels.com/@energepic-com-27411",
+            "image": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&h=350",
+            "src": {
+              "original": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg",
+              "large2x": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/110473/pexels-photo-110473.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "alt": "Woman in White Long Sleeved Shirt Holding a Pen Writing on a Paper",
+            "avg_color": "#8A8078",
+            "width": 4608,
+            "height": 3456,
+            "url": "https://www.pexels.com/photo/woman-in-white-long-sleeved-shirt-holding-a-pen-writing-on-a-paper-110473/",
+            "attribution": "Photos provided by Pexels",
+            "photographer_attribution": "Photo by energepic.com on Pexels"
+          }
+        },
+        "radius": {
+          "en-US": "None"
+        },
+        "enableZoom": {
+          "en-US": false
+        },
+        "enableBlur": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "3iKa1kurcubigGnxSSsUjN",
+        "type": "Entry",
+        "createdAt": "2024-06-06T10:40:09.360Z",
+        "updatedAt": "2024-06-06T10:40:24.417Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-06-06T10:40:24.417Z",
+        "firstPublishedAt": "2024-06-06T10:40:24.417Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pexelsImageWrapper"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/3iKa1kurcubigGnxSSsUjN"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Pexels / Close-Up Photography of Wet Leaves | Photo by Sitthan Kutty on Pexels"
+        },
+        "pexelsImage": {
+          "en-US": {
+            "photographer": "Sitthan Kutty",
+            "photographer_url": "https://www.pexels.com/@sitthan-kutty-322985",
+            "image": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&h=350",
+            "src": {
+              "original": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg",
+              "large2x": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/913807/pexels-photo-913807.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "alt": "Close-Up Photography of Wet Leaves",
+            "avg_color": "#2A382C",
+            "width": 4928,
+            "height": 3264,
+            "url": "https://www.pexels.com/photo/close-up-photography-of-wet-leaves-913807/",
+            "attribution": "Photos provided by Pexels",
+            "photographer_attribution": "Photo by Sitthan Kutty on Pexels"
+          }
+        },
+        "radius": {
+          "en-US": "None"
+        },
+        "enableZoom": {
+          "en-US": false
+        },
+        "enableBlur": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "3tV04sBUTVHzpSBt8lmlZW",
+        "type": "Entry",
+        "createdAt": "2024-06-06T10:40:41.870Z",
+        "updatedAt": "2024-06-06T10:40:58.012Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-06T10:40:58.012Z",
+        "firstPublishedAt": "2024-06-06T10:40:58.012Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pexelsImageWrapper"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/3tV04sBUTVHzpSBt8lmlZW"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Pexels / Bokeh Photography | Photo by Bob Clark on Pexels"
+        },
+        "pexelsImage": {
+          "en-US": {
+            "photographer": "Bob Clark",
+            "photographer_url": "https://www.pexels.com/@bclarkphoto",
+            "image": "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+            "src": {
+              "original": "https://images.pexels.com/photos/21492/pexels-photo.jpg",
+              "large2x": "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+              "large": "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "medium": "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+              "small": "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=130",
+              "portrait": "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+              "landscape": "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+              "tiny": "https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+            },
+            "alt": "Bokeh Photography",
+            "avg_color": "#605146",
+            "width": 5184,
+            "height": 3456,
+            "url": "https://www.pexels.com/photo/bokeh-photography-21492/",
+            "attribution": "Photos provided by Pexels",
+            "photographer_attribution": "Photo by Bob Clark on Pexels"
+          }
+        },
+        "radius": {
+          "en-US": "None"
+        },
+        "enableZoom": {
+          "en-US": false
+        },
+        "enableBlur": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "5IVrSVc5rqQaQCsodPYh11",
+        "type": "Entry",
+        "createdAt": "2024-06-06T11:00:37.851Z",
+        "updatedAt": "2024-06-06T11:01:17.326Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-06-06T11:01:17.326Z",
+        "firstPublishedAt": "2024-06-06T11:01:17.326Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "externalLink"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/5IVrSVc5rqQaQCsodPYh11"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Link / ChatGPT"
+        },
+        "title": {
+          "en-US": "ChatGPT"
+        },
+        "url": {
+          "en-US": "https://chatgpt.com"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "g0i9oz7yd4nm"
+          }
+        },
+        "id": "5FLsEGbb5gbbO5yy97laY9",
+        "type": "Entry",
+        "createdAt": "2024-06-06T11:11:58.534Z",
+        "updatedAt": "2024-06-06T11:12:57.051Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-06-06T11:12:57.051Z",
+        "firstPublishedAt": "2024-06-06T11:12:57.051Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0LxJB4LBv007oHgJD7WvJN"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "navigationItem"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/g0i9oz7yd4nm/environments/master/entries/5FLsEGbb5gbbO5yy97laY9"
+      },
+      "fields": {
+        "internalTitle": {
+          "en-US": "Nav / Blog"
+        },
+        "label": {
+          "en-US": "Blog"
+        },
+        "target": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2XcI5a8CtjYgkSmGE2HUpe"
+            }
+          }
         }
       }
     }

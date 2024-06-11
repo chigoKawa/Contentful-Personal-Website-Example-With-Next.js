@@ -37,15 +37,15 @@ const BgBlogCard: FC<IProps> = ({
 
           <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
             {tag && (
-              <div className="absolute z-50 translate top-2 right-2 ">
+              <div className="absolute  z-30 translate top-2 right-2 ">
                 <Chip color="primary">{tag}</Chip>
               </div>
             )}
-            <div className="p-4 sm:p-6 bg-background bg-opacity-50">
+            <div className="p-4 sm:p-6 bg-background bg-opacity-50 ">
               {date}
 
               <a href="#">
-                <h3 className="mt-0.5 text-lg text-whitex">{title}</h3>
+                <h3 className="mt-0.5 text-lg line-clamp-1">{title}</h3>
               </a>
 
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-foreground/95">

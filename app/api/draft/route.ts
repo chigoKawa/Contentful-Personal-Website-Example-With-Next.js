@@ -42,10 +42,11 @@ export async function GET(request: Request) {
 
   if (pageType === "blog") {
     // handle landing page redirect
+   
 
     return client(true)
       .getEntries({
-        content_type: "blogPostPage",
+        content_type: "blogPost",
         // @ts-ignore
         "fields.slug": slug,
       })

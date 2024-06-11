@@ -1,7 +1,6 @@
 "use client";
 import { createClient } from "contentful-management";
 
-import contentfulSPaceJson from "@/json/contentful-space-export.json";
 
 const contentfulSpaceExportFile = require("@/json/contentful-space-export.json");
 
@@ -99,6 +98,7 @@ async function createAndPublishContentType(client: any, contentType: any) {
         name: contentType.name,
         fields: contentType.fields,
         displayField: contentType.displayField,
+        description: contentType.description,
       }
     );
 
