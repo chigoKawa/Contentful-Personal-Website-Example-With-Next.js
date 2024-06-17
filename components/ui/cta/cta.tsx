@@ -33,7 +33,7 @@ const bodyField = cva(["text-sm md:text-base sm:mt-4 sm:block"], {
   variants: {
     backgroundColor: {
       Default: "text-background/90",
-      Primary: "text-primary-foreground/90x text-foreground/90",
+      Primary: "text-foreground/90",
       Secondary: "text-foreground/90",
       None: "text-foreground/90",
     },
