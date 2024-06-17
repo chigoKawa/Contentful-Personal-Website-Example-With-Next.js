@@ -158,11 +158,21 @@ const saveNavDataToFile = async () => {
     const themes = items[0]?.themes;
     if (themes) {
       ensureDirectoryExistence(THEMES_FILE_PATH);
-      fs.writeFileSync(
-        THEMES_FILE_PATH,
-        JSON.stringify(themes, null, 2),
-        "utf8"
-      );
+
+      if (themes?.themes) {
+        fs.writeFileSync(
+          THEMES_FILE_PATH,
+          JSON.stringify(themes, null, 2),
+          "utf8"
+        );
+      } else {
+        fs.writeFileSync(
+          THEMES_FILE_PATH,
+          JSON.stringify({ themes: themes }, null, 2),
+          "utf8"
+        );
+      }
+
       console.log("Themes saved to file.");
     }
   } catch (error) {

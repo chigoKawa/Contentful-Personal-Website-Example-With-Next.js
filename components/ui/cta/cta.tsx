@@ -18,9 +18,9 @@ const metaSection = cva(
     variants: {
       backgroundColor: {
         Default: "bg-foreground-500 text-background",
-        Primary: "bg-primary-500",
-        Secondary: "bg-background-100 text-foreground",
-        None: "bg-foreground-700 text-background",
+        Primary: "bg-primary-600",
+        Secondary: "bg-primary text-foreground",
+        None: "bg-default text-backgroundx",
       },
     },
     defaultVariants: {
@@ -33,9 +33,9 @@ const bodyField = cva(["text-sm md:text-base sm:mt-4 sm:block"], {
   variants: {
     backgroundColor: {
       Default: "text-background/90",
-      Primary: "text-primary-foreground/90",
+      Primary: "text-primary-foreground/90x text-foreground/90",
       Secondary: "text-foreground/90",
-      None: "text-primary-foreground/90",
+      None: "text-foreground/90",
     },
   },
   defaultVariants: {

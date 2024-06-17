@@ -175,7 +175,7 @@ export default async function RootLayout({
             defaultTheme: "light",
           }}
         >
-          <div className="relative flex flex-col h-screen  ">
+          <div className="relative flex flex-col h-screen light dark:dark bg-background text-foreground ">
             <Navbar navEntry={entry} />
 
             <main className="pt-16x flex-growx ">{children}</main>

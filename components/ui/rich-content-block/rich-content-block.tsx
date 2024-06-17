@@ -23,9 +23,9 @@ const metaSection = cva(
     variants: {
       backgroundColor: {
         Default: "bg-foreground-900x bg-foreground-500 text-background",
-        Primary: "bg-primary-500 text-primary-foreground",
-        Secondary: "bg-background-100 text-foreground",
-        None: "bg-foreground-700 text-background",
+        Primary: "bg-primary-500 text-primary-foregroundx",
+        Secondary: "bg-background-100x text-foregroundx",
+        None: "bg-foreground-700x text-backgroundx",
       },
     },
     defaultVariants: {

@@ -15,12 +15,13 @@ module.exports = {
   darkMode: "class",
   plugins: [
     require("@tailwindcss/typography"),
-    nextui({
-      addCommonColors: false,
-      defaultTheme: "light",
-      // defaultExtendTheme: "light",
-      layout: {},
-      themes: themes,
-    }),
+    nextui(themes),
+    // nextui({
+    //   addCommonColors: false,
+    //   defaultTheme: "light",
+    //   // defaultExtendTheme: "light",
+    //   layout: {},
+    //   themes: themes,
+    // }),
   ],
 };
