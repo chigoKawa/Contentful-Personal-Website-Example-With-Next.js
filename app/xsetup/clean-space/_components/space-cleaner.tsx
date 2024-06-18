@@ -1,7 +1,7 @@
 "use client";
 import { Input } from "@nextui-org/react";
 import { useState } from "react";
-import { seedTheSpace } from "./seeder";
+import { cleanTheSpace } from "./cleaner";
 
 import axios from "axios";
 
@@ -15,7 +15,7 @@ import {
   Link,
 } from "@nextui-org/react";
 
-const SpaceSetup = () => {
+const SpaceCleaner = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [errorMsgs, setErrorMsgs] = useState<any>(false);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -45,7 +45,7 @@ const SpaceSetup = () => {
     setIsProcessing(true);
     setHasError(false);
 
-    seedTheSpace({ spaceId, managementToken, envId })
+    cleanTheSpace({ spaceId, managementToken, envId })
       .then((d: any) => {
         console.log("e don do!!!", d);
         setHasError(d?.hasError || false);
@@ -71,10 +71,11 @@ const SpaceSetup = () => {
       >
         <CardHeader className="flex gap-3">
           <div className="flex flex-col gap-2">
-            <p className="text-xl font-bold">Space Setup</p>
+            <p className="text-xl font-bold">Space Cleaner</p>
             <p className="text-small text-foreground/90">
-              Fill your empty Contentful space with predefined content types and
-              sample content for easy setup and quick start
+              <b className="text-warning">⚠️WARNING!</b> This tool will
+              permanently delete all entries and content types from your
+              Contentful space.{" "}
             </p>
             <p className="text-danger-500">
               **For enhanced security, consider utilizing a temporary Content
@@ -118,9 +119,9 @@ const SpaceSetup = () => {
                 disabled={isProcessing}
                 isLoading={isProcessing}
                 type="submit"
-                color="primary"
+                color="danger"
               >
-                {isProcessing ? "Setting up your space.." : "Setup"}
+                {isProcessing ? "Cleaning your space.." : "⚠️ Clean Space"}
               </Button>
               {hasError ? (
                 <div className="">
@@ -159,4 +160,4 @@ const SpaceSetup = () => {
   );
 };
 
-export default SpaceSetup;
+export default SpaceCleaner;

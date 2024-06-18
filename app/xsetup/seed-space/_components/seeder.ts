@@ -1,18 +1,24 @@
 "use client";
 import { createClient } from "contentful-management";
 
-
 const contentfulSpaceExportFile = require("@/json/contentful-space-export.json");
 
-async function importEditorInterfaces(client: any, contentfulSpaceExportFile: any) {
+async function importEditorInterfaces(
+  client: any,
+  contentfulSpaceExportFile: any
+) {
   try {
     for (const editorInterface of contentfulSpaceExportFile.editorInterfaces) {
       const contentTypeId = editorInterface?.sys?.contentType?.sys?.id;
       if (contentTypeId) {
-        console.log(`Importing editor interface for content type "${contentTypeId}"`);
-        
+        console.log(
+          `Importing editor interface for content type "${contentTypeId}"`
+        );
+
         // Fetch the current editor interface to get the version number
-        const currentEditorInterface = await client.editorInterface.get({ contentTypeId });
+        const currentEditorInterface = await client.editorInterface.get({
+          contentTypeId,
+        });
         const currentVersion = currentEditorInterface.sys.version;
 
         await client.editorInterface.update(
@@ -28,7 +34,7 @@ async function importEditorInterfaces(client: any, contentfulSpaceExportFile: an
   }
 }
 
-async function cleanSpace(client: any) {
+export async function cleanSpace(client: any) {
   const entries = await client.entry.getMany({});
   // delete entries
   console.error(`Deleting!  entries`, entries);
@@ -239,15 +245,7 @@ async function createAndPublishAsset(client: any, asset: any) {
       }
     }
 
-    // Wait for the asset to be processed
-    // while (true) {
-    //   const assetStatus = await client.asset.get({
-    //     assetId: createdAsset.sys.id,
-    //   });
-    //   if (assetStatus.fields.file["en-US"].url) break;
-    //   console.log("Waiting for asset to be processed...");
-    //   await new Promise((resolve) => setTimeout(resolve, 1000));
-    // }
+  
 
     // Publish the asset
     const publishedAsset = await client.asset.publish(

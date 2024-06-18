@@ -1,22 +1,20 @@
-import React, { FC, HTMLAttributes } from "react";
-import { IHeroBanner, ICta } from "@/lib/contentful/interfaces/components";
-import Banner from "@/components/ui/hero-banner/banner/banner";
-import HeroBanner from "@/components/ui/hero-banner/hero-banner";
 import Cta from "@/components/ui/cta/cta";
-import { IImage, ILink } from "@/lib/shared/interfaces/topics";
-import { cva, cx, VariantProps } from "class-variance-authority";
 import {
   retrieveImageUrlFromMediaWrapper,
   transformBaseButtonToLink,
 } from "@/lib/contentful/helpers/common";
+import { ICta } from "@/lib/contentful/interfaces/components";
+import { IImage, ILink } from "@/lib/shared/interfaces/topics";
+import { cva, cx, VariantProps } from "class-variance-authority";
+import React, { FC, HTMLAttributes } from "react";
 
 const ctaContainer = cva([], {
   variants: {
     backgroundColor: {
-      Default: "bg-foreground-600 text-background",
-      Primary: "bg-default",
-      Secondary: "bg-secondary text-secondary-foreground",
-      None: "text-primary-foregroundx",
+      Default: "bg-foreground-100 text-backgroundx",
+      Primary: "bg-defaultx",
+      Secondary: "bg-gradient-to-t via-primary-200 from-primary-100 to-background",
+      None: "",
     },
   },
   defaultVariants: {
@@ -53,7 +51,7 @@ const CtaWrapper: FC<ICta> = (entry) => {
       )
     : null;
 
-  // const imageData = retrieveImageUrlFromMediaWrapper(entry?.fields?.image)
+
   const backgroundColor = entry?.fields?.backgroundColor || "Default";
   return (
     <div className="">

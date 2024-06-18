@@ -1,16 +1,12 @@
-import React, { FC } from "react";
+import { ICta } from "@/lib/contentful/interfaces/components";
 import { IImage, ILink } from "@/lib/shared/interfaces/topics";
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Image,
   Button,
-  Link,
+  Image,
+  Link
 } from "@nextui-org/react";
-import { ICta } from "@/lib/contentful/interfaces/components";
-import { cva, cx, VariantProps } from "class-variance-authority";
+import { cva, cx } from "class-variance-authority";
+import { FC } from "react";
 
 const metaSection = cva(
   ["p-8 md:p-12 lg:px-16 lg:py-24 flex items-center shadow-md"],
@@ -18,7 +14,7 @@ const metaSection = cva(
     variants: {
       backgroundColor: {
         Default: "bg-foreground-500 text-background",
-        Primary: "bg-primary-600",
+        Primary: "bg-default",
         Secondary: "bg-primary text-foreground",
         None: "bg-default text-backgroundx",
       },

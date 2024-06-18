@@ -1,21 +1,12 @@
-import React, { FC } from "react";
-import { IImage, ILink } from "@/lib/shared/interfaces/topics";
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Image,
-  Button,
-  Link,
-} from "@nextui-org/react";
-import {
-  ICta,
-  IRichContentBlock,
+  ICta
 } from "@/lib/contentful/interfaces/components";
-import { cva, cx, VariantProps } from "class-variance-authority";
-import generateOptions from "@/components/contentful/common/richtext/richtext-options";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { IImage } from "@/lib/shared/interfaces/topics";
+import {
+  Image
+} from "@nextui-org/react";
+import { cva, cx } from "class-variance-authority";
+import { FC } from "react";
 
 const metaSection = cva(
   ["p-8 md:p-12 lg:px-16 lg:py-24 flex items-center shadow-md w-full"],
@@ -25,7 +16,7 @@ const metaSection = cva(
         Default: "bg-foreground-900x bg-foreground-500 text-background",
         Primary: "bg-primary-500 text-primary-foregroundx",
         Secondary: "bg-background-100x text-foregroundx",
-        None: "bg-foreground-700x text-backgroundx ",
+        None: " ",
       },
     },
     defaultVariants: {
