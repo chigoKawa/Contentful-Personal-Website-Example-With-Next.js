@@ -6,6 +6,7 @@ import RichContentBlockWrapper from "../rich-content-block-wrapper/rich-content-
 import PexelsMediaWrapper from "../pexels-image-wrapper/pexels-image-wrapper";
 import MediaWrapper from "../media-wrapper/media-wrapper";
 import VideoMediaWrapper from "../video-wrapper/video-wrapper";
+import CodeSnippetWrapper from "../code-snippet-wrapper/code-snippet-wrapper";
 
 
 import TopicDefinitionWrapper from '@/components/contentful/topic-definition/topic-definition-wrapper'
@@ -21,6 +22,7 @@ export const componentMap: any = {
 
   heroBanner: HeroBannerWrapper,
   videoWrapper: VideoMediaWrapper,
+  codeSnippet: CodeSnippetWrapper,
 
   mediaWrapper: dynamic(() =>
     import("@/components/contentful/sample-component/sample-component").then(

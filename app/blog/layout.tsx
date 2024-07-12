@@ -1,5 +1,4 @@
 
-import BreadCrumbs from "./_components/bread-crumbs";
 export default function DashboardLayout({
   children,
   params,

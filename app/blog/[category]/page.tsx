@@ -1,20 +1,14 @@
+import BlogList from "@/components/contentful/blog-list/blog-list";
+import { fetchBlogsWithCategory } from "@/lib/contentful/blog-page";
 import {
   fetchCategories,
   fetchCategoryWithSlug,
 } from "@/lib/contentful/category-page";
+import { retrieveImageUrlFromMediaWrapper } from "@/lib/contentful/helpers/common";
 import { ICategoryPage } from "@/lib/contentful/interfaces/page";
 import type { Metadata, ResolvingMetadata } from "next";
 import { draftMode } from "next/headers";
 import { notFound } from "next/navigation";
-import { fetchBlogsWithCategory } from "@/lib/contentful/blog-page";
-import Link from "next/link";
-import BlogList from "@/components/contentful/blog-list/blog-list";
-import { ILandingPage } from "@/lib/contentful/interfaces/page";
-import { fetchLandingPageWithSlug } from "@/lib/contentful/landing-page";
-import { MetaProps } from "@/lib/shared/interfaces/topics";
-import { Progress } from "@nextui-org/react";
-import { retrieveImageUrlFromMediaWrapper } from "@/lib/contentful/helpers/common";
-import dynamic from "next/dynamic";
 
 
 

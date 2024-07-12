@@ -9,14 +9,14 @@ import { cva, cx } from "class-variance-authority";
 import { FC } from "react";
 
 const metaSection = cva(
-  ["p-8 md:p-12 lg:px-16 lg:py-24 flex items-center shadow-md"],
+  ["p-8 md:p-12 lg:px-16 lg:py-24 flex items-center shadow-md rounded-lg "],
   {
     variants: {
       backgroundColor: {
         Default: "bg-foreground-500 text-background",
-        Primary: "bg-default",
-        Secondary: "bg-primary text-foreground",
-        None: "bg-default text-backgroundx",
+        Primary: "bg-primary-600 text-content1",
+        Secondary: "bg-primary text-content1/90",
+        None: "bg-defaultx text-backgroundx",
       },
     },
     defaultVariants: {
@@ -29,8 +29,8 @@ const bodyField = cva(["text-sm md:text-base sm:mt-4 sm:block"], {
   variants: {
     backgroundColor: {
       Default: "text-background/90",
-      Primary: "text-foreground/90",
-      Secondary: "text-foreground/90",
+      Primary: "text-foreground/90x text-content1/90",
+      Secondary: "text-foreground/90x text-content1/90",
       None: "text-foreground/90",
     },
   },

@@ -1,12 +1,10 @@
 "use client";
-import {
-  useContentfulInspectorMode,
-  useContentfulLiveUpdates,
-} from "@contentful/live-preview/react";
-import Reacr from "react";
 import ComponentResolver from "@/components/contentful/common/component-resolver";
 import ReferenceFieldMapper from "@/components/contentful/common/reference-field-mapper";
 import { ILandingPage } from "@/lib/contentful/interfaces/page";
+import {
+  useContentfulLiveUpdates
+} from "@contentful/live-preview/react";
 
 type Props = {
   // lesson: ILessonEntry | undefined;
@@ -21,10 +19,9 @@ const LandingPage = ({ page: rawPage, children, isPreview }: Props) => {
     ? page?.fields?.heroBanner
     : rawPage?.fields?.heroBanner;
 
-  // const { availableWorkshops: workshops } = usePageContext();
 
   if (!page) {
-    return <div className="h-screenx"></div>;
+    return <div className=""></div>;
   }
   return (
     <div className="w-full h-full ">

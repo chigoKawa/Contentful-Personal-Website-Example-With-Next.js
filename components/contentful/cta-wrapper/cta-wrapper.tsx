@@ -8,12 +8,13 @@ import { IImage, ILink } from "@/lib/shared/interfaces/topics";
 import { cva, cx, VariantProps } from "class-variance-authority";
 import React, { FC, HTMLAttributes } from "react";
 
-const ctaContainer = cva([], {
+
+const ctaContainer = cva(["prose-md"], {
   variants: {
     backgroundColor: {
-      Default: "bg-foreground-100 text-backgroundx",
-      Primary: "bg-defaultx",
-      Secondary: "bg-gradient-to-t via-primary-200 from-primary-100 to-background",
+      Default: "bg-content1",
+      Primary: "bg-content3",
+      Secondary: "bg-content4",
       None: "",
     },
   },

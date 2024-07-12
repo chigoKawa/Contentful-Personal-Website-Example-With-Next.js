@@ -2,11 +2,11 @@ import {
   fetchBlogWithSlug,
   fetchBlogsWithCategory,
 } from "@/lib/contentful/blog-page";
+import { retrieveImageUrlFromMediaWrapper } from "@/lib/contentful/helpers/common";
 import { IBlogPostPage } from "@/lib/contentful/interfaces/page";
 import type { Metadata, ResolvingMetadata } from "next";
 import { draftMode } from "next/headers";
 import { notFound } from "next/navigation";
-import { retrieveImageUrlFromMediaWrapper } from "@/lib/contentful/helpers/common";
 
 import BlogPage from "@/components/blog-page/blog-page";
 type Props = {

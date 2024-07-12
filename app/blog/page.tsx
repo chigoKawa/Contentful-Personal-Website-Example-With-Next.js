@@ -2,13 +2,10 @@ import BlogList from "@/components/contentful/blog-list/blog-list";
 import { fetchBlogs } from "@/lib/contentful/blog-page";
 import { ILandingPage } from "@/lib/contentful/interfaces/page";
 import {
-  fetchLandingPageWithSlug,
-  fetchlandingpages,
+  fetchLandingPageWithSlug
 } from "@/lib/contentful/landing-page";
 import type { Metadata, ResolvingMetadata } from "next";
 import { draftMode } from "next/headers";
-import { notFound } from "next/navigation";
-import BreadCrumbs from "./_components/bread-crumbs";
 
 import { retrieveImageUrlFromMediaWrapper } from "@/lib/contentful/helpers/common";
 import { MetaProps } from "@/lib/shared/interfaces/topics";
