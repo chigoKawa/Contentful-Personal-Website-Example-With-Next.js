@@ -31,6 +31,7 @@ const ConfigureComments = () => {
       setHasComments(hasCmntTable);
     } catch (error) {
       setIsProcessing(false);
+      setHasComments(false)
     }
   };
   const handleSubmit = async () => {
