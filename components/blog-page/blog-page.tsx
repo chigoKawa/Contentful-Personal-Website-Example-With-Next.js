@@ -8,6 +8,9 @@ import { IBlogPostPage } from "@/lib/contentful/interfaces/page";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Image } from "@nextui-org/react";
 import React from "react";
+import Cusdis from "@/lib/Cusdis";
+import CoralEmbed from "@/lib/CoralEmbed";
+
 
 import generateOptions from "@/components/contentful/common/richtext/richtext-options";
 
@@ -15,20 +18,12 @@ interface IBlogEntryProps {
   blogEntry: IBlogPostPage;
 }
 const BlogPage: React.FC<IBlogEntryProps> = ({ blogEntry }) => {
-  const { fields, metadata } = blogEntry;
+  const { fields, metadata, sys } = blogEntry;
 
   // const { slug, author, featuredImage, summary, body, title, publishedDate } =
   //   fields;
-    const {
-      slug,
-      author,
-      featuredImage,
-      summary,
-      body,
-      title,
-      publishedDate,
-
-    } = fields;
+  const { slug, author, featuredImage, summary, body, title, publishedDate } =
+    fields;
 
   const image = retrieveImageUrlFromMediaWrapper(
     blogEntry?.fields?.featuredImage
@@ -44,19 +39,17 @@ const BlogPage: React.FC<IBlogEntryProps> = ({ blogEntry }) => {
     bio,
   } = author?.fields || {};
 
-
-
   const authorName = `${firstName} ${lastName}`;
 
   const avatar = avatarField?.fields?.file?.url || "";
 
   const authorWebsite =
-  website ||
-  linkedinProfileUrl?.fields?.url ||
-  twitterProfileUrl?.fields?.url ||
-  "/";
+    website ||
+    linkedinProfileUrl?.fields?.url ||
+    twitterProfileUrl?.fields?.url ||
+    "/";
   return (
-    <div className="mx-auto prose md:prose-lg lg:prose-xl md:mt-20x text-inherit pb-10">
+    <div className="mx-auto prose md:prose-lg lg:prose-xl  text-inherit pb-4">
       <article
         className="mx-auto w-full"
         itemScope
@@ -119,11 +112,28 @@ const BlogPage: React.FC<IBlogEntryProps> = ({ blogEntry }) => {
               {documentToReactComponents(summary, generateOptions())}
             </div>
           )}
-          <div itemProp="articleBody" className="overflow-hidden w-full">
+          <div itemProp="articleBody" className="overflow-hidden w-full ">
             {documentToReactComponents(body, generateOptions())}
           </div>
+     
         </div>
       </article>
+
+      {/* <div className="!bg-background p-2">
+        <Cusdis
+          appId={"7a4345e5-5421-4e9a-b98c-1cce76a245c2"}
+          pageId={sys?.id}
+          pageUrl={`/blog/${fields?.slug}`}
+          pageTitle={`${fields.title}`}
+        />
+      </div> */}
+ 
+      {/* <div className="">
+        <CoralEmbed
+          storyID={sys?.id}
+          storyURL={`http://localhost:3000/blog/${fields?.slug}`}
+        />
+      </div> */}
     </div>
   );
 };

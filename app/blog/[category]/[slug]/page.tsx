@@ -1,3 +1,4 @@
+import BlogCommentsView from "@/components/blog-page/blog-comments/blog-comments-view";
 import {
   fetchBlogWithSlug,
   fetchBlogsWithCategory,
@@ -8,6 +9,7 @@ import type { Metadata, ResolvingMetadata } from "next";
 import { draftMode } from "next/headers";
 import { notFound } from "next/navigation";
 
+// export const revalidate = 0
 import BlogPage from "@/components/blog-page/blog-page";
 type Props = {
   params: { category: string; slug: string };
@@ -72,8 +74,6 @@ export async function generateMetadata(
   };
 }
 
-
-
 export async function generateStaticParams({ params }: any) {
   // const pages = await fetchCategories();
   const pages = await fetchBlogsWithCategory(params.category);
@@ -104,6 +104,12 @@ export default async function Page({ params }: Props) {
   return (
     <div className="w-full max-w-screen-lg mx-auto text-inherit">
       <BlogPage blogEntry={entry} />
+
+      {process.env.POSTGRES_URL && (
+        <div className="">
+          <BlogCommentsView entryId={entry?.sys?.id} />
+        </div>
+      )}
     </div>
   );
 }

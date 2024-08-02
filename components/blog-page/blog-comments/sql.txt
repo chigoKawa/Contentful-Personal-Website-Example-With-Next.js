@@ -1,0 +1,10 @@
+CREATE TABLE comments (
+    id SERIAL PRIMARY KEY,
+    postId VARCHAR(50) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    comment TEXT NOT NULL,
+    createdTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    parentId INTEGER,
+    FOREIGN KEY (parentId) REFERENCES comments (id) ON DELETE CASCADE
+);

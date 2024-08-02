@@ -102,3 +102,19 @@ ul > li > ul > li > ul {
   list-style-type: square !important;
 }
 
+#coral {
+  /* Change primary font */
+  --font-family-primary: "Verdana";
+  /* --palette-background-body: red !important; */
+  --palette-background-body:red !important;
+
+  /* Remove round corners */
+  --round-corners: 50px;
+  /* background-color: red !important; */
+
+}
+
+
+
+
+
