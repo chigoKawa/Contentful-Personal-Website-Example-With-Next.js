@@ -7,6 +7,7 @@ import clsx from "clsx";
 import localFont from "next/font/local";
 import { draftMode } from "next/headers";
 import { Providers } from "./providers";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 import {
   Inter,
@@ -22,6 +23,9 @@ import {
   Raleway,
   Nunito,
 } from "next/font/google";
+
+const NEXT_PUBLIC_GOOGLE_TAGMGR_ID =
+  process.env.NEXT_PUBLIC_GOOGLE_TAGMGR_ID || null;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -177,9 +181,12 @@ export default async function RootLayout({
         >
           <div className="relative flex flex-col h-screen light dark:dark bg-background text-foreground ">
             <Navbar navEntry={entry} />
-
             <main className="pt-16x flex-growx ">{children}</main>
             <Footer navEntry={entry} />
+
+            {NEXT_PUBLIC_GOOGLE_TAGMGR_ID && (
+              <GoogleTagManager gtmId={NEXT_PUBLIC_GOOGLE_TAGMGR_ID || ""} />
+            )}
           </div>
         </Providers>
       </body>

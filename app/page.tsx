@@ -4,6 +4,8 @@ import { MetaProps } from "@/lib/shared/interfaces/topics";
 import { Progress } from "@nextui-org/react";
 import type { Metadata, ResolvingMetadata } from "next";
 import { draftMode } from "next/headers";
+import Gallery from "@/components/ui/gallery/gallery";
+import { sendGAEvent } from "@next/third-parties/google";
 
 // import LandingPage from "@/components/contentful/landing-page/landing-page";
 import { retrieveImageUrlFromMediaWrapper } from "@/lib/contentful/helpers/common";
@@ -62,7 +64,7 @@ export default async function Home() {
     preview: draftMode().isEnabled,
   })) as ILandingPage;
   return (
-    <section className="flex flex-col items-center justify-center gap-4x py-8x md:py-10x">
+    <section className="flex flex-col items-center justify-center gap-4x py-8x md:py-10x overflow-hidden">
       {/* <pre className="">{JSON.stringify(homepage, null , 2)}</pre> */}
 
       <Suspense
@@ -75,6 +77,8 @@ export default async function Home() {
           />
         }
       >
+        {/* <Gallery /> */}
+
         <LandingPage page={homepage} isPreview={draftMode().isEnabled} />
       </Suspense>
     </section>
